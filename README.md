@@ -48,37 +48,36 @@ pi
 
 | Model | Type | Context | Max Tokens | Input Cost | Output Cost |
 |-------|------|---------|------------|------------|-------------|
-| GPT-5.3 Codex | Text + Image | 400K | 128K | $1.75 | $14.00 |
-| GPT-5 Codex | Text + Image | 400K | 128K | $1.07 | $8.50 |
-| GPT-5.1 Codex Max | Text + Image | 400K | 128K | $1.25 | $10.00 |
-| GPT-5.1 Codex | Text + Image | 400K | 128K | $1.07 | $8.50 |
-| GPT-5.1 Codex Mini | Text + Image | 400K | 128K | $0.25 | $2.00 |
-| GPT-5.2 | Text + Image | 400K | 128K | $1.75 | $14.00 |
-| GPT-5.2 Codex | Text + Image | 400K | 128K | $1.75 | $14.00 |
-| GPT-5.1 | Text + Image | 400K | 128K | $1.07 | $8.50 |
-| GPT-5 | Text + Image | 400K | 128K | $1.07 | $8.50 |
-| GPT-5 Nano | Text + Image | 400K | 128K | Free | Free |
-| Claude Opus 4.6 | Text + Image | 1M | 128K | $5.00 | $25.00 |
-| Claude Opus 4.5 | Text + Image | 200K | 64K | $5.00 | $25.00 |
-| Claude Opus 4.1 | Text + Image | 200K | 32K | $15.00 | $75.00 |
-| Claude Sonnet 4.6 | Text + Image | 1M | 64K | $3.00 | $15.00 |
-| Claude Sonnet 4.5 | Text + Image | 1M | 64K | $3.00 | $15.00 |
-| Claude Sonnet 4 | Text + Image | 1M | 64K | $3.00 | $15.00 |
-| Claude Haiku 4.5 | Text + Image | 200K | 64K | $1.00 | $5.00 |
-| Claude Haiku 3.5 | Text + Image | 200K | 8K | $0.80 | $4.00 |
-| Gemini 3.1 Pro Preview | Text + Image | 1M | 65K | $2.00 | $12.00 |
-| Gemini 3 Pro | Text + Image | 1M | 65K | $2.00 | $12.00 |
-| Gemini 3 Flash | Text + Image | 1M | 65K | $0.50 | $3.00 |
-| GLM-5 | Text | 200K | 131K | $1.00 | $3.20 |
-| GLM-4.7 | Text | 200K | 131K | $0.60 | $2.20 |
-| GLM-4.6 | Text | 200K | 131K | $0.60 | $2.20 |
-| MiniMax M2.5 | Text | 200K | 131K | $0.30 | $1.20 |
-| MiniMax M2.5 Free | Text | 200K | 131K | Free | Free |
-| MiniMax M2.1 | Text | 200K | 131K | $0.30 | $1.20 |
-| Kimi K2.5 | Text + Image | 256K | 65K | $0.60 | $3.00 |
-| Trinity Large Preview | Text | 128K | 128K | Free | Free |
 | Big Pickle | Text | 200K | 128K | Free | Free |
-
+| Claude Haiku 3.5 | Text + Image | 200K | 8K | $0.80 | $4.00 |
+| Claude Haiku 4.5 | Text + Image | 200K | 64K | $1.00 | $5.00 |
+| Claude Opus 4.1 | Text + Image | 200K | 32K | $15.00 | $75.00 |
+| Claude Opus 4.5 | Text + Image | 200K | 64K | $5.00 | $25.00 |
+| Claude Opus 4.6 | Text + Image | 1.0M | 128K | $5.00 | $25.00 |
+| Claude Sonnet 4 | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
+| Claude Sonnet 4.5 | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
+| Claude Sonnet 4.6 | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
+| Gemini 3 Flash | Text + Image | 1.0M | 66K | $0.50 | $3.00 |
+| Gemini 3 Pro | Text + Image | 1.0M | 66K | $2.00 | $12.00 |
+| Gemini 3.1 Pro Preview | Text + Image | 1.0M | 66K | $2.00 | $12.00 |
+| GLM-4.6 | Text | 205K | 131K | $0.60 | $2.20 |
+| GLM-4.7 | Text | 205K | 131K | $0.60 | $2.20 |
+| GLM-5 | Text | 205K | 131K | $1.00 | $3.20 |
+| GPT-5 | Text + Image | 400K | 128K | $1.07 | $8.50 |
+| GPT-5.1 | Text + Image | 400K | 128K | $1.07 | $8.50 |
+| GPT-5.2 | Text + Image | 400K | 128K | $1.75 | $14.00 |
+| GPT-5 Codex | Text + Image | 400K | 128K | $1.07 | $8.50 |
+| GPT-5.1 Codex | Text + Image | 400K | 128K | $1.07 | $8.50 |
+| GPT-5.1 Codex Max | Text + Image | 400K | 128K | $1.25 | $10.00 |
+| GPT-5.1 Codex Mini | Text + Image | 400K | 128K | $0.25 | $2.00 |
+| GPT-5.2 Codex | Text + Image | 400K | 128K | $1.75 | $14.00 |
+| GPT-5.3 Codex | Text + Image | 400K | 128K | $1.75 | $14.00 |
+| GPT-5 Nano | Text + Image | 400K | 128K | Free | Free |
+| Kimi K2.5 | Text + Image | 262K | 66K | $0.60 | $3.00 |
+| MiniMax M2.1 | Text | 205K | 131K | $0.30 | $1.20 |
+| MiniMax M2.5 | Text | 205K | 131K | $0.30 | $1.20 |
+| MiniMax M2.5 Free | Text | 205K | 131K | Free | Free |
+| Trinity Large Preview | Text | 131K | 131K | Free | Free |
 *Costs are per million tokens. Prices subject to change - check [opencode.ai](https://opencode.ai) for current pricing.*
 
 ## Usage
