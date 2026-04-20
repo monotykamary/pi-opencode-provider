@@ -1,6 +1,6 @@
 # pi-opencode-provider
 
-A [pi](https://github.com/marioechr/pi) extension that registers [opencode](https://opencode.ai/) as a custom provider. Access GPT, Claude, Gemini, GLM, MiniMax, Kimi, and more through a unified API.
+A [pi](https://github.com/badlogic/pi-mono) extension that registers [opencode](https://opencode.ai/) as a custom provider. Access GPT, Claude, Gemini, GLM, MiniMax, Kimi, and more through a unified API.
 
 ## Features
 
