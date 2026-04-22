@@ -24,6 +24,20 @@ export default function (pi: ExtensionAPI) {
 
 		models: [
 		{
+			id: "minimax-m2.7",
+			name: "MiniMax M2.7",
+			reasoning: true,
+			input: ["text"],
+			cost: {
+				input: 0.3,
+				output: 1.2,
+				cacheRead: 0.06,
+				cacheWrite: 0,
+			},
+			contextWindow: 204800,
+			maxTokens: 131072,
+		},
+		{
 			id: "gpt-5.1-codex-max",
 			name: "GPT-5.1 Codex Max",
 			reasoning: true,
@@ -372,6 +386,34 @@ export default function (pi: ExtensionAPI) {
 			},
 			contextWindow: 200000,
 			maxTokens: 64000,
+		},
+		{
+			id: "ling-2.6-flash-free",
+			name: "Ling 2.6 Flash Free",
+			reasoning: false,
+			input: ["text"],
+			cost: {
+				input: 0,
+				output: 0,
+				cacheRead: 0,
+				cacheWrite: 0,
+			},
+			contextWindow: 262100,
+			maxTokens: 32800,
+		},
+		{
+			id: "kimi-k2.6",
+			name: "Kimi K2.6",
+			reasoning: true,
+			input: ["text","image","video"],
+			cost: {
+				input: 0.95,
+				output: 4,
+				cacheRead: 0.16,
+				cacheWrite: 0,
+			},
+			contextWindow: 262144,
+			maxTokens: 65536,
 		},
 		{
 			id: "gpt-5-codex",
