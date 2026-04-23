@@ -4,7 +4,7 @@ A [pi](https://github.com/badlogic/pi-mono) extension that registers [opencode](
 
 ## Features
 
-- **35+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **38+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Unified API** via opencode.ai's OpenAI-compatible completions endpoint
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** support for advanced reasoning capabilities
@@ -87,7 +87,10 @@ pi
 | GPT-5.4 Nano | Text + Image | 400K | 128K | $0.20 | $1.25 |
 | GPT-5.4 Pro | Text + Image | 1.1M | 128K | $30.00 | $180.00 |
 | Kimi K2.5 | Text + Image | 262K | 66K | $0.60 | $3.00 |
+| Kimi K2.6 | Text + Image | 262K | 66K | $0.95 | $4.00 |
+| Ling 2.6 Flash Free | Text | 262K | 33K | Free | Free |
 | MiniMax M2.5 | Text | 205K | 131K | $0.30 | $1.20 |
+| MiniMax M2.7 | Text | 205K | 131K | $0.30 | $1.20 |
 | MiniMax M2.5 Free | Text | 205K | 131K | Free | Free |
 | Nemotron 3 Super Free | Text | 205K | 128K | Free | Free |
 | Qwen3.5 Plus | Text + Image | 262K | 66K | $0.20 | $1.20 |
