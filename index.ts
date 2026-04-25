@@ -5,11 +5,7 @@
  * Base URL: https://opencode.ai/zen/v1
  *
  * Usage:
- *   # Option 1: Store in auth.json (recommended)
- *   # Add to ~/.pi/agent/auth.json:
- *   #   "opencode": { "type": "api_key", "key": "your-api-key" }
- *
- *   # Option 2: Set as environment variable
+ *   # Set your API key
  *   export OPENCODE_API_KEY=your-api-key
  *
  *   # Run pi with the extension
@@ -18,40 +14,9 @@
  * Then use /model to select from available models
  */
 
-import type { ExtensionAPI, ModelRegistry } from "@mariozechner/pi-coding-agent";
-
-// ─── API Key Resolution (via ModelRegistry) ────────────────────────────────────
-
-/**
- * Cached API key resolved from ModelRegistry.
- *
- * Pi's core resolves the key via ModelRegistry before making requests,
- * but we also cache it here so we can resolve it in contexts where the resolved
- * key isn't directly available (e.g. future features like quota fetching) and
- * to make the dependency explicit.
- *
- * Resolution order (via ModelRegistry.getApiKeyForProvider):
- *   1. Runtime override (CLI --api-key)
- *   2. auth.json stored credentials (manual entry in ~/.pi/agent/auth.json)
- *   3. OAuth tokens (auto-refreshed)
- *   4. Environment variable (from auth.json or provider config)
- */
-let cachedApiKey: string | undefined;
-
-/**
- * Resolve the opencode API key via ModelRegistry and cache the result.
- * Called on session_start and whenever ctx.modelRegistry is available.
- */
-async function resolveApiKey(modelRegistry: ModelRegistry): Promise<void> {
-  cachedApiKey = await modelRegistry.getApiKeyForProvider("opencode") ?? undefined;
-}
+import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
 
 export default function (pi: ExtensionAPI) {
-  // Resolve API key via ModelRegistry on session start
-  pi.on("session_start", async (_event, ctx) => {
-    await resolveApiKey(ctx.modelRegistry);
-  });
-
 	pi.registerProvider("opencode", {
 		baseUrl: "https://opencode.ai/zen/v1",
 		apiKey: "OPENCODE_API_KEY",
@@ -479,6 +444,20 @@ export default function (pi: ExtensionAPI) {
 			maxTokens: 128000,
 		},
 		{
+			id: "hy3-preview-free",
+			name: "Hy3 preview Free",
+			reasoning: true,
+			input: ["text"],
+			cost: {
+				input: 0,
+				output: 0,
+				cacheRead: 0,
+				cacheWrite: 0,
+			},
+			contextWindow: 256000,
+			maxTokens: 64000,
+		},
+		{
 			id: "minimax-m2.5",
 			name: "MiniMax M2.5",
 			reasoning: true,
@@ -549,6 +528,20 @@ export default function (pi: ExtensionAPI) {
 			maxTokens: 128000,
 		},
 		{
+			id: "gpt-5.5-pro",
+			name: "GPT-5.5 Pro",
+			reasoning: true,
+			input: ["text","image","pdf"],
+			cost: {
+				input: 30,
+				output: 180,
+				cacheRead: 30,
+				cacheWrite: 0,
+			},
+			contextWindow: 1050000,
+			maxTokens: 128000,
+		},
+		{
 			id: "gpt-5.1-codex",
 			name: "GPT-5.1 Codex",
 			reasoning: true,
@@ -561,6 +554,20 @@ export default function (pi: ExtensionAPI) {
 			},
 			contextWindow: 400000,
 			maxTokens: 128000,
+		},
+		{
+			id: "gpt-5.5",
+			name: "GPT-5.5",
+			reasoning: true,
+			input: ["text","image","pdf"],
+			cost: {
+				input: 5,
+				output: 30,
+				cacheRead: 0.5,
+				cacheWrite: 0,
+			},
+			contextWindow: 1050000,
+			maxTokens: 130000,
 		},
 		{
 			id: "gpt-5.4",
