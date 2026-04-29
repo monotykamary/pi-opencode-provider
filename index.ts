@@ -152,7 +152,11 @@ export default function (pi: ExtensionAPI) {
     await resolveApiKey(ctx.modelRegistry);
     revalidateModels(cachedApiKey, embeddedModels).then((freshBase) => {
       if (freshBase) {
-        pi.registerProvider("opencode", { models: freshBase });
+        pi.registerProvider("opencode", {
+          baseUrl: BASE_URL,
+          apiKey: "OPENCODE_API_KEY",
+          models: freshBase,
+        });
       }
     });
   });
