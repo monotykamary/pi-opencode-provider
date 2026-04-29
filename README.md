@@ -4,7 +4,7 @@ A [pi](https://github.com/badlogic/pi-mono) extension that registers [opencode](
 
 ## Features
 
-- **41+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **38+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Unified API** via opencode.ai's OpenAI-compatible completions endpoint
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** support for advanced reasoning capabilities
@@ -75,7 +75,6 @@ pi
 | GPT-5.1 | Text + Image | 400K | 128K | $1.07 | $8.50 |
 | GPT-5.2 | Text + Image | 400K | 128K | $1.75 | $14.00 |
 | GPT-5.4 | Text + Image | 1.1M | 128K | $2.50 | $15.00 |
-| GPT-5.5 | Text + Image | 1.1M | 130K | $5.00 | $30.00 |
 | GPT-5 Codex | Text + Image | 400K | 128K | $1.07 | $8.50 |
 | GPT-5.1 Codex | Text + Image | 400K | 128K | $1.07 | $8.50 |
 | GPT-5.1 Codex Max | Text + Image | 400K | 128K | $1.25 | $10.00 |
@@ -87,8 +86,6 @@ pi
 | GPT-5 Nano | Text + Image | 400K | 128K | Free | Free |
 | GPT-5.4 Nano | Text + Image | 400K | 128K | $0.20 | $1.25 |
 | GPT-5.4 Pro | Text + Image | 1.1M | 128K | $30.00 | $180.00 |
-| GPT-5.5 Pro | Text + Image | 1.1M | 128K | $30.00 | $180.00 |
-| Hy3 preview Free | Text | 256K | 64K | Free | Free |
 | Kimi K2.5 | Text + Image | 262K | 66K | $0.60 | $3.00 |
 | Kimi K2.6 | Text + Image | 262K | 66K | $0.95 | $4.00 |
 | Ling 2.6 Flash Free | Text | 262K | 33K | Free | Free |
