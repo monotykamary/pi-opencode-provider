@@ -4,6 +4,10 @@
  * Registers opencode as a custom provider using the openai-completions API.
  * Base URL: https://opencode.ai/zen/v1
  *
+ * Model resolution: models.json → patch.json → custom-models.json
+ *
+ * Merge order: [live|cache|embedded] → apply patch.json → merge custom-models.json
+ *
  * Usage:
  *   # Set your API key
  *   export OPENCODE_API_KEY=your-api-key
@@ -15,560 +19,116 @@
  */
 
 import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
+import modelsData from "./models.json" with { type: "json" };
+import customModelsData from "./custom-models.json" with { type: "json" };
+import patchData from "./patch.json" with { type: "json" };
+
+// ─── Types ────────────────────────────────────────────────────────────────────
+
+interface JsonModel {
+  id: string;
+  name: string;
+  reasoning: boolean;
+  input: string[];
+  cost: {
+    input: number;
+    output: number;
+    cacheRead: number;
+    cacheWrite: number;
+  };
+  contextWindow: number;
+  maxTokens: number;
+  compat?: Record<string, unknown>;
+}
+
+interface PatchEntry {
+  name?: string;
+  reasoning?: boolean;
+  input?: string[];
+  cost?: {
+    input?: number;
+    output?: number;
+    cacheRead?: number;
+    cacheWrite?: number;
+  };
+  contextWindow?: number;
+  maxTokens?: number;
+  compat?: Record<string, unknown>;
+}
+
+type PatchData = Record<string, PatchEntry>;
+
+// ─── Patch & Custom Model Merging ─────────────────────────────────────────────
+
+function applyPatch(model: JsonModel, patch: PatchEntry): JsonModel {
+  const result = { ...model };
+
+  if (patch.name !== undefined) result.name = patch.name;
+  if (patch.reasoning !== undefined) result.reasoning = patch.reasoning;
+  if (patch.input !== undefined) result.input = patch.input;
+  if (patch.contextWindow !== undefined) result.contextWindow = patch.contextWindow;
+  if (patch.maxTokens !== undefined) result.maxTokens = patch.maxTokens;
+
+  if (patch.cost) {
+    result.cost = {
+      input: patch.cost.input ?? result.cost.input,
+      output: patch.cost.output ?? result.cost.output,
+      cacheRead: patch.cost.cacheRead ?? result.cost.cacheRead,
+      cacheWrite: patch.cost.cacheWrite ?? result.cost.cacheWrite,
+    };
+  }
+  if (patch.compat) {
+    result.compat = { ...(result.compat || {}), ...patch.compat };
+  }
+
+  return result;
+}
+
+/** Full pipeline: base models → patch → custom → result */
+function buildModels(base: JsonModel[], custom: JsonModel[], patch: PatchData): JsonModel[] {
+  const modelMap = new Map<string, JsonModel>();
+
+  for (const model of base) {
+    modelMap.set(model.id, model);
+  }
+
+  for (const [id, patchEntry] of Object.entries(patch)) {
+    const existing = modelMap.get(id);
+    if (existing) {
+      modelMap.set(id, applyPatch(existing, patchEntry));
+    }
+  }
+
+  for (const model of custom) {
+    const existing = modelMap.get(model.id);
+    const patchEntry = patch[model.id];
+    if (existing && patchEntry) {
+      modelMap.set(model.id, applyPatch(model, patchEntry));
+    } else if (existing) {
+      modelMap.set(model.id, model);
+    } else if (patchEntry) {
+      modelMap.set(model.id, applyPatch(model, patchEntry));
+    } else {
+      modelMap.set(model.id, model);
+    }
+  }
+
+  return Array.from(modelMap.values());
+}
+
+// ─── Extension Entry Point ────────────────────────────────────────────────────
 
 export default function (pi: ExtensionAPI) {
-	pi.registerProvider("opencode", {
-		baseUrl: "https://opencode.ai/zen/v1",
-		apiKey: "OPENCODE_API_KEY",
-		api: "openai-completions",
+  const embeddedModels = modelsData as JsonModel[];
+  const customModels = customModelsData as JsonModel[];
+  const patches = patchData as PatchData;
 
-		models: [
-		{
-			id: "minimax-m2.7",
-			name: "MiniMax M2.7",
-			reasoning: true,
-			input: ["text"],
-			cost: {
-				input: 0.3,
-				output: 1.2,
-				cacheRead: 0.06,
-				cacheWrite: 0,
-			},
-			contextWindow: 204800,
-			maxTokens: 131072,
-		},
-		{
-			id: "gpt-5.1-codex-max",
-			name: "GPT-5.1 Codex Max",
-			reasoning: true,
-			input: ["text","image"],
-			cost: {
-				input: 1.25,
-				output: 10,
-				cacheRead: 0.125,
-				cacheWrite: 0,
-			},
-			contextWindow: 400000,
-			maxTokens: 128000,
-		},
-		{
-			id: "claude-haiku-4-5",
-			name: "Claude Haiku 4.5",
-			reasoning: true,
-			input: ["text","image","pdf"],
-			cost: {
-				input: 1,
-				output: 5,
-				cacheRead: 0.1,
-				cacheWrite: 1.25,
-			},
-			contextWindow: 200000,
-			maxTokens: 64000,
-		},
-		{
-			id: "kimi-k2.5",
-			name: "Kimi K2.5",
-			reasoning: true,
-			input: ["text","image","video"],
-			cost: {
-				input: 0.6,
-				output: 3,
-				cacheRead: 0.08,
-				cacheWrite: 0,
-			},
-			contextWindow: 262144,
-			maxTokens: 65536,
-		},
-		{
-			id: "glm-5",
-			name: "GLM-5",
-			reasoning: true,
-			input: ["text"],
-			cost: {
-				input: 1,
-				output: 3.2,
-				cacheRead: 0.2,
-				cacheWrite: 0,
-			},
-			contextWindow: 204800,
-			maxTokens: 131072,
-		},
-		{
-			id: "gemini-3.1-pro",
-			name: "Gemini 3.1 Pro Preview",
-			reasoning: true,
-			input: ["text","image","video","audio","pdf"],
-			cost: {
-				input: 2,
-				output: 12,
-				cacheRead: 0.2,
-				cacheWrite: 0,
-			},
-			contextWindow: 1048576,
-			maxTokens: 65536,
-		},
-		{
-			id: "claude-sonnet-4-6",
-			name: "Claude Sonnet 4.6",
-			reasoning: true,
-			input: ["text","image","pdf"],
-			cost: {
-				input: 3,
-				output: 15,
-				cacheRead: 0.3,
-				cacheWrite: 3.75,
-			},
-			contextWindow: 1000000,
-			maxTokens: 64000,
-		},
-		{
-			id: "claude-opus-4-7",
-			name: "Claude Opus 4.7",
-			reasoning: true,
-			input: ["text","image","pdf"],
-			cost: {
-				input: 5,
-				output: 25,
-				cacheRead: 0.5,
-				cacheWrite: 6.25,
-			},
-			contextWindow: 1000000,
-			maxTokens: 128000,
-		},
-		{
-			id: "gpt-5-nano",
-			name: "GPT-5 Nano",
-			reasoning: true,
-			input: ["text","image"],
-			cost: {
-				input: 0,
-				output: 0,
-				cacheRead: 0,
-				cacheWrite: 0,
-			},
-			contextWindow: 400000,
-			maxTokens: 128000,
-		},
-		{
-			id: "gpt-5.3-codex",
-			name: "GPT-5.3 Codex",
-			reasoning: true,
-			input: ["text","image","pdf"],
-			cost: {
-				input: 1.75,
-				output: 14,
-				cacheRead: 0.175,
-				cacheWrite: 0,
-			},
-			contextWindow: 400000,
-			maxTokens: 128000,
-		},
-		{
-			id: "minimax-m2.5-free",
-			name: "MiniMax M2.5 Free",
-			reasoning: true,
-			input: ["text"],
-			cost: {
-				input: 0,
-				output: 0,
-				cacheRead: 0,
-				cacheWrite: 0,
-			},
-			contextWindow: 204800,
-			maxTokens: 131072,
-		},
-		{
-			id: "gpt-5.2",
-			name: "GPT-5.2",
-			reasoning: true,
-			input: ["text","image"],
-			cost: {
-				input: 1.75,
-				output: 14,
-				cacheRead: 0.175,
-				cacheWrite: 0,
-			},
-			contextWindow: 400000,
-			maxTokens: 128000,
-		},
-		{
-			id: "big-pickle",
-			name: "Big Pickle",
-			reasoning: true,
-			input: ["text"],
-			cost: {
-				input: 0,
-				output: 0,
-				cacheRead: 0,
-				cacheWrite: 0,
-			},
-			contextWindow: 200000,
-			maxTokens: 128000,
-		},
-		{
-			id: "claude-opus-4-1",
-			name: "Claude Opus 4.1",
-			reasoning: true,
-			input: ["text","image","pdf"],
-			cost: {
-				input: 15,
-				output: 75,
-				cacheRead: 1.5,
-				cacheWrite: 18.75,
-			},
-			contextWindow: 200000,
-			maxTokens: 32000,
-		},
-		{
-			id: "qwen3.6-plus",
-			name: "Qwen3.6 Plus",
-			reasoning: true,
-			input: ["text","image","video"],
-			cost: {
-				input: 0.5,
-				output: 3,
-				cacheRead: 0.05,
-				cacheWrite: 0.625,
-			},
-			contextWindow: 262144,
-			maxTokens: 65536,
-		},
-		{
-			id: "gpt-5.4-mini",
-			name: "GPT-5.4 Mini",
-			reasoning: true,
-			input: ["text","image","pdf"],
-			cost: {
-				input: 0.75,
-				output: 4.5,
-				cacheRead: 0.075,
-				cacheWrite: 0,
-			},
-			contextWindow: 400000,
-			maxTokens: 128000,
-		},
-		{
-			id: "glm-5.1",
-			name: "GLM-5.1",
-			reasoning: true,
-			input: ["text"],
-			cost: {
-				input: 1.4,
-				output: 4.4,
-				cacheRead: 0.26,
-				cacheWrite: 0,
-			},
-			contextWindow: 204800,
-			maxTokens: 131072,
-		},
-		{
-			id: "gpt-5.4-nano",
-			name: "GPT-5.4 Nano",
-			reasoning: true,
-			input: ["text","image","pdf"],
-			cost: {
-				input: 0.2,
-				output: 1.25,
-				cacheRead: 0.02,
-				cacheWrite: 0,
-			},
-			contextWindow: 400000,
-			maxTokens: 128000,
-		},
-		{
-			id: "gpt-5.2-codex",
-			name: "GPT-5.2 Codex",
-			reasoning: true,
-			input: ["text","image","pdf"],
-			cost: {
-				input: 1.75,
-				output: 14,
-				cacheRead: 0.175,
-				cacheWrite: 0,
-			},
-			contextWindow: 400000,
-			maxTokens: 128000,
-		},
-		{
-			id: "gpt-5.1-codex-mini",
-			name: "GPT-5.1 Codex Mini",
-			reasoning: true,
-			input: ["text","image"],
-			cost: {
-				input: 0.25,
-				output: 2,
-				cacheRead: 0.025,
-				cacheWrite: 0,
-			},
-			contextWindow: 400000,
-			maxTokens: 128000,
-		},
-		{
-			id: "claude-sonnet-4",
-			name: "Claude Sonnet 4",
-			reasoning: true,
-			input: ["text","image","pdf"],
-			cost: {
-				input: 3,
-				output: 15,
-				cacheRead: 0.3,
-				cacheWrite: 3.75,
-			},
-			contextWindow: 1000000,
-			maxTokens: 64000,
-		},
-		{
-			id: "gemini-3-flash",
-			name: "Gemini 3 Flash",
-			reasoning: true,
-			input: ["text","image","video","audio","pdf"],
-			cost: {
-				input: 0.5,
-				output: 3,
-				cacheRead: 0.05,
-				cacheWrite: 0,
-			},
-			contextWindow: 1048576,
-			maxTokens: 65536,
-		},
-		{
-			id: "gpt-5.1",
-			name: "GPT-5.1",
-			reasoning: true,
-			input: ["text","image"],
-			cost: {
-				input: 1.07,
-				output: 8.5,
-				cacheRead: 0.107,
-				cacheWrite: 0,
-			},
-			contextWindow: 400000,
-			maxTokens: 128000,
-		},
-		{
-			id: "gpt-5.4-pro",
-			name: "GPT-5.4 Pro",
-			reasoning: true,
-			input: ["text","image","pdf"],
-			cost: {
-				input: 30,
-				output: 180,
-				cacheRead: 30,
-				cacheWrite: 0,
-			},
-			contextWindow: 1050000,
-			maxTokens: 128000,
-		},
-		{
-			id: "claude-opus-4-5",
-			name: "Claude Opus 4.5",
-			reasoning: true,
-			input: ["text","image","pdf"],
-			cost: {
-				input: 5,
-				output: 25,
-				cacheRead: 0.5,
-				cacheWrite: 6.25,
-			},
-			contextWindow: 200000,
-			maxTokens: 64000,
-		},
-		{
-			id: "kimi-k2.6",
-			name: "Kimi K2.6",
-			reasoning: true,
-			input: ["text","image","video"],
-			cost: {
-				input: 0.95,
-				output: 4,
-				cacheRead: 0.16,
-				cacheWrite: 0,
-			},
-			contextWindow: 262144,
-			maxTokens: 65536,
-		},
-		{
-			id: "gpt-5-codex",
-			name: "GPT-5 Codex",
-			reasoning: true,
-			input: ["text","image"],
-			cost: {
-				input: 1.07,
-				output: 8.5,
-				cacheRead: 0.107,
-				cacheWrite: 0,
-			},
-			contextWindow: 400000,
-			maxTokens: 128000,
-		},
-		{
-			id: "gpt-5.3-codex-spark",
-			name: "GPT-5.3 Codex Spark",
-			reasoning: true,
-			input: ["text"],
-			cost: {
-				input: 1.75,
-				output: 14,
-				cacheRead: 0.175,
-				cacheWrite: 0,
-			},
-			contextWindow: 128000,
-			maxTokens: 128000,
-		},
-		{
-			id: "hy3-preview-free",
-			name: "Hy3 preview Free",
-			reasoning: true,
-			input: ["text"],
-			cost: {
-				input: 0,
-				output: 0,
-				cacheRead: 0,
-				cacheWrite: 0,
-			},
-			contextWindow: 256000,
-			maxTokens: 64000,
-		},
-		{
-			id: "minimax-m2.5",
-			name: "MiniMax M2.5",
-			reasoning: true,
-			input: ["text"],
-			cost: {
-				input: 0.3,
-				output: 1.2,
-				cacheRead: 0.06,
-				cacheWrite: 0,
-			},
-			contextWindow: 204800,
-			maxTokens: 131072,
-		},
-		{
-			id: "claude-sonnet-4-5",
-			name: "Claude Sonnet 4.5",
-			reasoning: true,
-			input: ["text","image","pdf"],
-			cost: {
-				input: 3,
-				output: 15,
-				cacheRead: 0.3,
-				cacheWrite: 3.75,
-			},
-			contextWindow: 1000000,
-			maxTokens: 64000,
-		},
-		{
-			id: "gpt-5",
-			name: "GPT-5",
-			reasoning: true,
-			input: ["text","image"],
-			cost: {
-				input: 1.07,
-				output: 8.5,
-				cacheRead: 0.107,
-				cacheWrite: 0,
-			},
-			contextWindow: 400000,
-			maxTokens: 128000,
-		},
-		{
-			id: "qwen3.5-plus",
-			name: "Qwen3.5 Plus",
-			reasoning: true,
-			input: ["text","image","video"],
-			cost: {
-				input: 0.2,
-				output: 1.2,
-				cacheRead: 0.02,
-				cacheWrite: 0.25,
-			},
-			contextWindow: 262144,
-			maxTokens: 65536,
-		},
-		{
-			id: "nemotron-3-super-free",
-			name: "Nemotron 3 Super Free",
-			reasoning: true,
-			input: ["text"],
-			cost: {
-				input: 0,
-				output: 0,
-				cacheRead: 0,
-				cacheWrite: 0,
-			},
-			contextWindow: 204800,
-			maxTokens: 128000,
-		},
-		{
-			id: "gpt-5.5-pro",
-			name: "GPT-5.5 Pro",
-			reasoning: true,
-			input: ["text","image","pdf"],
-			cost: {
-				input: 30,
-				output: 180,
-				cacheRead: 30,
-				cacheWrite: 0,
-			},
-			contextWindow: 1050000,
-			maxTokens: 128000,
-		},
-		{
-			id: "gpt-5.1-codex",
-			name: "GPT-5.1 Codex",
-			reasoning: true,
-			input: ["text","image"],
-			cost: {
-				input: 1.07,
-				output: 8.5,
-				cacheRead: 0.107,
-				cacheWrite: 0,
-			},
-			contextWindow: 400000,
-			maxTokens: 128000,
-		},
-		{
-			id: "gpt-5.5",
-			name: "GPT-5.5",
-			reasoning: true,
-			input: ["text","image","pdf"],
-			cost: {
-				input: 5,
-				output: 30,
-				cacheRead: 0.5,
-				cacheWrite: 0,
-			},
-			contextWindow: 1050000,
-			maxTokens: 128000,
-		},
-		{
-			id: "gpt-5.4",
-			name: "GPT-5.4",
-			reasoning: true,
-			input: ["text","image","pdf"],
-			cost: {
-				input: 2.5,
-				output: 15,
-				cacheRead: 0.25,
-				cacheWrite: 0,
-			},
-			contextWindow: 1050000,
-			maxTokens: 128000,
-		},
-		{
-			id: "claude-opus-4-6",
-			name: "Claude Opus 4.6",
-			reasoning: true,
-			input: ["text","image","pdf"],
-			cost: {
-				input: 5,
-				output: 25,
-				cacheRead: 0.5,
-				cacheWrite: 6.25,
-			},
-			contextWindow: 1000000,
-			maxTokens: 128000,
-		}
-		],
-	});
+  const models = buildModels(embeddedModels, customModels, patches);
+
+  pi.registerProvider("opencode", {
+    baseUrl: "https://opencode.ai/zen/v1",
+    apiKey: "OPENCODE_API_KEY",
+    api: "openai-completions",
+    models,
+  });
 }
