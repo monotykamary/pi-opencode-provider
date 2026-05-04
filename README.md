@@ -71,28 +71,28 @@ pi
 | GLM-5 | Text | 205K | 131K | $1.00 | $3.20 |
 | GLM-5.1 | Text | 205K | 131K | $1.40 | $4.40 |
 | GPT-5 | Text + Image | 400K | 128K | $1.07 | $8.50 |
-| GPT-5.1 | Text + Image | 400K | 128K | $1.07 | $8.50 |
-| GPT-5.2 | Text + Image | 400K | 128K | $1.75 | $14.00 |
-| GPT-5.4 | Text + Image | 1.1M | 128K | $2.50 | $15.00 |
-| GPT-5.5 | Text + Image | 1.1M | 128K | $5.00 | $30.00 |
 | GPT-5 Codex | Text + Image | 400K | 128K | $1.07 | $8.50 |
+| GPT-5 Nano | Text + Image | 400K | 128K | Free | Free |
+| GPT-5.1 | Text + Image | 400K | 128K | $1.07 | $8.50 |
 | GPT-5.1 Codex | Text + Image | 400K | 128K | $1.07 | $8.50 |
 | GPT-5.1 Codex Max | Text + Image | 400K | 128K | $1.25 | $10.00 |
 | GPT-5.1 Codex Mini | Text + Image | 400K | 128K | $0.25 | $2.00 |
+| GPT-5.2 | Text + Image | 400K | 128K | $1.75 | $14.00 |
 | GPT-5.2 Codex | Text + Image | 400K | 128K | $1.75 | $14.00 |
 | GPT-5.3 Codex | Text + Image | 400K | 128K | $1.75 | $14.00 |
 | GPT-5.3 Codex Spark | Text | 128K | 128K | $1.75 | $14.00 |
+| GPT-5.4 | Text + Image | 1.1M | 128K | $2.50 | $15.00 |
 | GPT-5.4 Mini | Text + Image | 400K | 128K | $0.75 | $4.50 |
-| GPT-5 Nano | Text + Image | 400K | 128K | Free | Free |
 | GPT-5.4 Nano | Text + Image | 400K | 128K | $0.20 | $1.25 |
 | GPT-5.4 Pro | Text + Image | 1.1M | 128K | $30.00 | $180.00 |
+| GPT-5.5 | Text + Image | 1.1M | 128K | $5.00 | $30.00 |
 | GPT-5.5 Pro | Text + Image | 1.1M | 128K | $30.00 | $180.00 |
 | Hy3 preview Free | Text | 256K | 64K | Free | Free |
 | Kimi K2.5 | Text + Image | 262K | 66K | $0.60 | $3.00 |
 | Kimi K2.6 | Text + Image | 262K | 66K | $0.95 | $4.00 |
 | MiniMax M2.5 | Text | 205K | 131K | $0.30 | $1.20 |
-| MiniMax M2.7 | Text | 205K | 131K | $0.30 | $1.20 |
 | MiniMax M2.5 Free | Text | 205K | 131K | Free | Free |
+| MiniMax M2.7 | Text | 205K | 131K | $0.30 | $1.20 |
 | Nemotron 3 Super Free | Text | 205K | 128K | Free | Free |
 | Qwen3.5 Plus | Text + Image | 262K | 66K | $0.20 | $1.20 |
 | Qwen3.6 Plus | Text + Image | 262K | 66K | $0.50 | $3.00 |
