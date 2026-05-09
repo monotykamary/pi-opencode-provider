@@ -149,9 +149,9 @@
       "image"
     ],
     "cost": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
+      "input": 0.05,
+      "output": 0.4,
+      "cacheRead": 0.005,
       "cacheWrite": 0
     },
     "contextWindow": 400000,
@@ -488,22 +488,6 @@
     },
     "contextWindow": 128000,
     "maxTokens": 128000
-  },
-  {
-    "id": "hy3-preview-free",
-    "name": "Hy3 preview Free",
-    "reasoning": true,
-    "input": [
-      "text"
-    ],
-    "cost": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0
-    },
-    "contextWindow": 256000,
-    "maxTokens": 64000
   },
   {
     "id": "minimax-m2.5",
