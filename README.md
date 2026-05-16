@@ -4,7 +4,7 @@ A [pi](https://github.com/badlogic/pi-mono) extension that registers [opencode](
 
 ## Features
 
-- **38+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **40+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Unified API** via opencode.ai's OpenAI-compatible completions endpoint
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** support for advanced reasoning capabilities
@@ -66,6 +66,7 @@ pi
 | Claude Sonnet 4 | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
 | Claude Sonnet 4.5 | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
 | Claude Sonnet 4.6 | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
+| DeepSeek V4 Flash Free | Text | 200K | 128K | Free | Free |
 | Gemini 3 Flash | Text + Image | 1.0M | 66K | $0.50 | $3.00 |
 | Gemini 3.1 Pro Preview | Text + Image | 1.0M | 66K | $2.00 | $12.00 |
 | GLM-5 | Text | 205K | 131K | $1.00 | $3.20 |
@@ -95,6 +96,7 @@ pi
 | Nemotron 3 Super Free | Text | 205K | 128K | Free | Free |
 | Qwen3.5 Plus | Text + Image | 262K | 66K | $0.20 | $1.20 |
 | Qwen3.6 Plus | Text + Image | 262K | 66K | $0.50 | $3.00 |
+| Qwen3.6 Plus Free | Text + Image | 262K | 66K | Free | Free |
 *Costs are per million tokens. Prices subject to change - check [opencode.ai](https://opencode.ai) for current pricing.*
 
 ## Usage
