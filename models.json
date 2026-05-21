@@ -70,6 +70,26 @@
     "maxTokens": 131072
   },
   {
+    "id": "gemini-3.5-flash",
+    "name": "Gemini 3.5 Flash",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image",
+      "video",
+      "audio",
+      "pdf"
+    ],
+    "cost": {
+      "input": 1.5,
+      "output": 9,
+      "cacheRead": 0.15,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1048576,
+    "maxTokens": 65536
+  },
+  {
     "id": "gpt-5.2",
     "name": "GPT-5.2",
     "reasoning": true,
@@ -172,6 +192,23 @@
     },
     "contextWindow": 128000,
     "maxTokens": 128000
+  },
+  {
+    "id": "grok-build-0.1",
+    "name": "Grok Build 0.1",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1,
+      "output": 2,
+      "cacheRead": 0.2,
+      "cacheWrite": 0
+    },
+    "contextWindow": 256000,
+    "maxTokens": 256000
   },
   {
     "id": "deepseek-v4-flash-free",
@@ -399,22 +436,6 @@
     },
     "contextWindow": 1048576,
     "maxTokens": 65536
-  },
-  {
-    "id": "minimax-m2.5-free",
-    "name": "MiniMax M2.5 Free",
-    "reasoning": true,
-    "input": [
-      "text"
-    ],
-    "cost": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0
-    },
-    "contextWindow": 204800,
-    "maxTokens": 131072
   },
   {
     "id": "gpt-5.1-codex-max",
