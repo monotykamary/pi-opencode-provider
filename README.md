@@ -4,7 +4,7 @@ A [pi](https://github.com/badlogic/pi-mono) extension that registers [opencode](
 
 ## Features
 
-- **40+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **41+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Unified API** via opencode.ai's OpenAI-compatible completions endpoint
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** support for advanced reasoning capabilities
@@ -69,6 +69,7 @@ pi
 | DeepSeek V4 Flash Free | Text | 200K | 128K | Free | Free |
 | Gemini 3 Flash | Text + Image | 1.0M | 66K | $0.50 | $3.00 |
 | Gemini 3.1 Pro Preview | Text + Image | 1.0M | 66K | $2.00 | $12.00 |
+| Gemini 3.5 Flash | Text + Image | 1.0M | 66K | $1.50 | $9.00 |
 | GLM-5 | Text | 205K | 131K | $1.00 | $3.20 |
 | GLM-5.1 | Text | 205K | 131K | $1.40 | $4.40 |
 | GPT-5 | Text + Image | 400K | 128K | $1.07 | $8.50 |
@@ -88,10 +89,10 @@ pi
 | GPT-5.4 Pro | Text + Image | 1.1M | 128K | $30.00 | $180.00 |
 | GPT-5.5 | Text + Image | 1.1M | 128K | $5.00 | $30.00 |
 | GPT-5.5 Pro | Text + Image | 1.1M | 128K | $30.00 | $180.00 |
+| Grok Build 0.1 | Text + Image | 256K | 256K | $1.00 | $2.00 |
 | Kimi K2.5 | Text + Image | 262K | 66K | $0.60 | $3.00 |
 | Kimi K2.6 | Text + Image | 262K | 66K | $0.95 | $4.00 |
 | MiniMax M2.5 | Text | 205K | 131K | $0.30 | $1.20 |
-| MiniMax M2.5 Free | Text | 205K | 131K | Free | Free |
 | MiniMax M2.7 | Text | 205K | 131K | $0.30 | $1.20 |
 | Nemotron 3 Super Free | Text | 205K | 128K | Free | Free |
 | Qwen3.5 Plus | Text + Image | 262K | 66K | $0.20 | $1.20 |
