@@ -1,6 +1,17 @@
-# pi-opencode-provider
+<div align="center">
 
-A [pi](https://github.com/badlogic/pi-mono) extension that registers [opencode](https://opencode.ai/) as a custom provider. Access GPT, Claude, Gemini, GLM, MiniMax, Kimi, and more through a unified API.
+# 🌐 pi-opencode-provider
+
+**44+ models via [opencode](https://opencode.ai/)**
+
+_GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](https://github.com/earendil-works/pi-coding-agent)._
+
+[![pi extension](https://img.shields.io/badge/pi-extension-blueviolet)](https://github.com/earendil-works/pi-coding-agent)
+[![license](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
+
+</div>
+
+---
 
 ## Features
 
