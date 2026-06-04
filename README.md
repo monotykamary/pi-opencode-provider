@@ -2,7 +2,7 @@
 
 # 🌐 pi-opencode-provider
 
-**44+ models via [opencode](https://opencode.ai/)**
+**46+ models via [opencode](https://opencode.ai/)**
 
 _GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](https://github.com/earendil-works/pi-coding-agent)._
 
@@ -16,9 +16,9 @@ _GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](http
 ## Features
 
 - **44+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
-- **Unified API** via opencode.ai's OpenAI-compatible completions endpoint
+- **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
-- **Reasoning Models** support for advanced reasoning capabilities
+- **Reasoning Models** with thinking level maps for proper effort control
 - **Vision Support** for image-capable models
 
 ## Installation
@@ -66,52 +66,52 @@ pi
 
 ## Available Models
 
-| Model | Type | Context | Max Tokens | Input Cost | Output Cost |
-|-------|------|---------|------------|------------|-------------|
-| Big Pickle | Text | 200K | 32K | Free | Free |
-| Claude Haiku 4.5 | Text + Image | 200K | 64K | $1.00 | $5.00 |
-| Claude Opus 4.1 | Text + Image | 200K | 32K | $15.00 | $75.00 |
-| Claude Opus 4.5 | Text + Image | 200K | 64K | $5.00 | $25.00 |
-| Claude Opus 4.6 | Text + Image | 1.0M | 128K | $5.00 | $25.00 |
-| Claude Opus 4.7 | Text + Image | 1.0M | 128K | $5.00 | $25.00 |
-| Claude Opus 4.8 | Text + Image | 1.0M | 128K | $5.00 | $25.00 |
-| Claude Sonnet 4 | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
-| Claude Sonnet 4.5 | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
-| Claude Sonnet 4.6 | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
-| DeepSeek V4 Flash | Text | 1.0M | 384K | $0.14 | $0.28 |
-| DeepSeek V4 Flash Free | Text | 200K | 128K | Free | Free |
-| Gemini 3 Flash | Text + Image | 1.0M | 66K | $0.50 | $3.00 |
-| Gemini 3.1 Pro Preview | Text + Image | 1.0M | 66K | $2.00 | $12.00 |
-| Gemini 3.5 Flash | Text + Image | 1.0M | 66K | $1.50 | $9.00 |
-| GLM-5 | Text | 205K | 131K | $1.00 | $3.20 |
-| GLM-5.1 | Text | 205K | 131K | $1.40 | $4.40 |
-| GPT-5 | Text + Image | 400K | 128K | $1.07 | $8.50 |
-| GPT-5 Codex | Text + Image | 400K | 128K | $1.07 | $8.50 |
-| GPT-5 Nano | Text + Image | 400K | 128K | $0.05 | $0.40 |
-| GPT-5.1 | Text + Image | 400K | 128K | $1.07 | $8.50 |
-| GPT-5.1 Codex | Text + Image | 400K | 128K | $1.07 | $8.50 |
-| GPT-5.1 Codex Max | Text + Image | 400K | 128K | $1.25 | $10.00 |
-| GPT-5.1 Codex Mini | Text + Image | 400K | 128K | $0.25 | $2.00 |
-| GPT-5.2 | Text + Image | 400K | 128K | $1.75 | $14.00 |
-| GPT-5.2 Codex | Text + Image | 400K | 128K | $1.75 | $14.00 |
-| GPT-5.3 Codex | Text + Image | 400K | 128K | $1.75 | $14.00 |
-| GPT-5.3 Codex Spark | Text | 128K | 128K | $1.75 | $14.00 |
-| GPT-5.4 | Text + Image | 1.1M | 128K | $2.50 | $15.00 |
-| GPT-5.4 Mini | Text + Image | 400K | 128K | $0.75 | $4.50 |
-| GPT-5.4 Nano | Text + Image | 400K | 128K | $0.20 | $1.25 |
-| GPT-5.4 Pro | Text + Image | 1.1M | 128K | $30.00 | $180.00 |
-| GPT-5.5 | Text + Image | 1.1M | 128K | $5.00 | $30.00 |
-| GPT-5.5 Pro | Text + Image | 1.1M | 128K | $30.00 | $180.00 |
-| Grok Build 0.1 | Text + Image | 256K | 256K | $1.00 | $2.00 |
-| Kimi K2.5 | Text + Image | 262K | 66K | $0.60 | $3.00 |
-| Kimi K2.6 | Text + Image | 262K | 66K | $0.95 | $4.00 |
-| MiMo V2.5 Free | Text + Image | 200K | 32K | Free | Free |
-| MiniMax M2.5 | Text | 205K | 131K | $0.30 | $1.20 |
-| MiniMax M2.7 | Text | 205K | 131K | $0.30 | $1.20 |
-| MiniMax M3 Free | Text + Image | 200K | 32K | Free | Free |
-| Nemotron 3 Super Free | Text | 205K | 128K | Free | Free |
-| Qwen3.5 Plus | Text + Image | 262K | 66K | $0.20 | $1.20 |
-| Qwen3.6 Plus | Text + Image | 262K | 66K | $0.50 | $3.00 |
+| Model | API | Type | Context | Max Tokens | Input Cost | Output Cost |
+|-------|-----|------|---------|------------|------------|-------------|
+| Big Pickle | Completions | Text | 200K | 32K | Free | Free |
+| Claude Haiku 4.5 | Anthropic | Text + Image | 200K | 64K | $1.00 | $5.00 |
+| Claude Opus 4.1 | Anthropic | Text + Image | 200K | 32K | $15.00 | $75.00 |
+| Claude Opus 4.5 | Anthropic | Text + Image | 200K | 64K | $5.00 | $25.00 |
+| Claude Opus 4.6 | Anthropic | Text + Image | 1.0M | 128K | $5.00 | $25.00 |
+| Claude Opus 4.7 | Anthropic | Text + Image | 1.0M | 128K | $5.00 | $25.00 |
+| Claude Opus 4.8 | Anthropic | Text + Image | 1.0M | 128K | $5.00 | $25.00 |
+| Claude Sonnet 4 | Anthropic | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
+| Claude Sonnet 4.5 | Anthropic | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
+| Claude Sonnet 4.6 | Anthropic | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
+| DeepSeek V4 Flash | Completions | Text | 1.0M | 384K | $0.14 | $0.28 |
+| DeepSeek V4 Flash Free | Completions | Text | 200K | 128K | Free | Free |
+| Gemini 3 Flash | Gemini | Text + Image | 1.0M | 66K | $0.50 | $3.00 |
+| Gemini 3.1 Pro Preview | Gemini | Text + Image | 1.0M | 66K | $2.00 | $12.00 |
+| Gemini 3.5 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $9.00 |
+| GLM-5 | Completions | Text | 205K | 131K | $1.00 | $3.20 |
+| GLM-5.1 | Completions | Text | 205K | 131K | $1.40 | $4.40 |
+| GPT-5 | Responses | Text + Image | 400K | 128K | $1.07 | $8.50 |
+| GPT-5 Codex | Responses | Text + Image | 400K | 128K | $1.07 | $8.50 |
+| GPT-5 Nano | Responses | Text + Image | 400K | 128K | $0.05 | $0.40 |
+| GPT-5.1 | Responses | Text + Image | 400K | 128K | $1.07 | $8.50 |
+| GPT-5.1 Codex | Responses | Text + Image | 400K | 128K | $1.07 | $8.50 |
+| GPT-5.1 Codex Max | Responses | Text + Image | 400K | 128K | $1.25 | $10.00 |
+| GPT-5.1 Codex Mini | Responses | Text + Image | 400K | 128K | $0.25 | $2.00 |
+| GPT-5.2 | Responses | Text + Image | 400K | 128K | $1.75 | $14.00 |
+| GPT-5.2 Codex | Responses | Text + Image | 400K | 128K | $1.75 | $14.00 |
+| GPT-5.3 Codex | Responses | Text + Image | 400K | 128K | $1.75 | $14.00 |
+| GPT-5.3 Codex Spark | Responses | Text | 128K | 128K | $1.75 | $14.00 |
+| GPT-5.4 | Responses | Text + Image | 1.1M | 128K | $2.50 | $15.00 |
+| GPT-5.4 Mini | Responses | Text + Image | 400K | 128K | $0.75 | $4.50 |
+| GPT-5.4 Nano | Responses | Text + Image | 400K | 128K | $0.20 | $1.25 |
+| GPT-5.4 Pro | Responses | Text + Image | 1.1M | 128K | $30.00 | $180.00 |
+| GPT-5.5 | Responses | Text + Image | 1.1M | 128K | $5.00 | $30.00 |
+| GPT-5.5 Pro | Responses | Text + Image | 1.1M | 128K | $30.00 | $180.00 |
+| Grok Build 0.1 | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
+| Kimi K2.5 | Completions | Text + Image | 262K | 66K | $0.60 | $3.00 |
+| Kimi K2.6 | Completions | Text + Image | 262K | 66K | $0.95 | $4.00 |
+| MiMo V2.5 Free | Completions | Text + Image | 200K | 32K | Free | Free |
+| MiniMax M2.5 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
+| MiniMax M2.7 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
+| MiniMax M3 Free | Anthropic | Text + Image | 200K | 32K | Free | Free |
+| Nemotron 3 Super Free | Completions | Text | 205K | 128K | Free | Free |
+| Qwen3.5 Plus | Anthropic | Text + Image | 262K | 66K | $0.20 | $1.20 |
+| Qwen3.6 Plus | Anthropic | Text + Image | 262K | 66K | $0.50 | $3.00 |
 *Costs are per million tokens. Prices subject to change - check [opencode.ai](https://opencode.ai) for current pricing.*
 
 ## Usage
