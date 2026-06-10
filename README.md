@@ -15,7 +15,7 @@ _GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](http
 
 ## Features
 
-- **44+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **43+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -108,8 +108,7 @@ pi
 | MiMo V2.5 Free | Completions | Text + Image | 200K | 32K | Free | Free |
 | MiniMax M2.5 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
 | MiniMax M2.7 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
-| MiniMax M3 Free | Anthropic | Text + Image | 200K | 32K | Free | Free |
-| Nemotron 3 Super Free | Completions | Text | 205K | 128K | Free | Free |
+| Nemotron 3 Ultra Free | Completions | Text | 1.0M | 128K | Free | Free |
 | Qwen3.5 Plus | Anthropic | Text + Image | 262K | 66K | $0.20 | $1.20 |
 | Qwen3.6 Plus | Anthropic | Text + Image | 262K | 66K | $0.50 | $3.00 |
 *Costs are per million tokens. Prices subject to change - check [opencode.ai](https://opencode.ai) for current pricing.*

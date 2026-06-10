@@ -342,6 +342,24 @@
     "maxTokens": 128000
   },
   {
+    "id": "nemotron-3-ultra-free",
+    "name": "Nemotron 3 Ultra Free",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1000000,
+    "maxTokens": 128000
+  },
+  {
     "id": "gemini-3-flash",
     "name": "Gemini 3 Flash",
     "api": "google-generative-ai",
@@ -604,24 +622,6 @@
     "maxTokens": 128000
   },
   {
-    "id": "nemotron-3-super-free",
-    "name": "Nemotron 3 Super Free",
-    "api": "openai-completions",
-    "baseUrl": "https://opencode.ai/zen/v1",
-    "reasoning": true,
-    "input": [
-      "text"
-    ],
-    "cost": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0
-    },
-    "contextWindow": 204800,
-    "maxTokens": 128000
-  },
-  {
     "id": "glm-5",
     "name": "GLM-5",
     "api": "openai-completions",
@@ -666,25 +666,6 @@
     "reasoning": true,
     "input": [
       "text"
-    ],
-    "cost": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0
-    },
-    "contextWindow": 200000,
-    "maxTokens": 32000
-  },
-  {
-    "id": "minimax-m3-free",
-    "name": "MiniMax M3 Free",
-    "api": "anthropic-messages",
-    "baseUrl": "https://opencode.ai/zen",
-    "reasoning": true,
-    "input": [
-      "text",
-      "image"
     ],
     "cost": {
       "input": 0,
