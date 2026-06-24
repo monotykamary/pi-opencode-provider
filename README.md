@@ -15,7 +15,7 @@ _GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](http
 
 ## Features
 
-- **45+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **46+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -86,6 +86,7 @@ pi
 | Gemini 3.5 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $9.00 |
 | GLM-5 | Completions | Text | 205K | 131K | $1.00 | $3.20 |
 | GLM-5.1 | Completions | Text | 205K | 131K | $1.40 | $4.40 |
+| GLM-5.2 | Completions | Text | 1.0M | 131K | $1.40 | $4.40 |
 | GPT-5 | Responses | Text + Image | 400K | 128K | $1.07 | $8.50 |
 | GPT-5 Codex | Responses | Text + Image | 400K | 128K | $1.07 | $8.50 |
 | GPT-5 Nano | Responses | Text + Image | 400K | 128K | $0.05 | $0.40 |
