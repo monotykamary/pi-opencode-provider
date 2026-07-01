@@ -15,7 +15,7 @@ _GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](http
 
 ## Features
 
-- **46+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **49+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -78,6 +78,7 @@ pi
 | Claude Sonnet 4 | Anthropic | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
 | Claude Sonnet 4.5 | Anthropic | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
 | Claude Sonnet 4.6 | Anthropic | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
+| Claude Sonnet 5 | Anthropic | Text + Image | 1.0M | 128K | $2.00 | $10.00 |
 | DeepSeek V4 Flash | Completions | Text | 1.0M | 384K | $0.14 | $0.28 |
 | DeepSeek V4 Flash Free | Completions | Text | 200K | 128K | Free | Free |
 | DeepSeek V4 Pro | Completions | Text | 1.0M | 384K | $1.74 | $3.84 |
@@ -107,9 +108,11 @@ pi
 | Grok Build 0.1 | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
 | Kimi K2.5 | Completions | Text + Image | 262K | 66K | $0.60 | $3.00 |
 | Kimi K2.6 | Completions | Text + Image | 262K | 66K | $0.95 | $4.00 |
+| Kimi K2.7 Code | Completions | Text + Image | 262K | 262K | $0.95 | $4.00 |
 | MiMo V2.5 Free | Completions | Text + Image | 200K | 32K | Free | Free |
-| MiniMax M2.5 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
-| MiniMax M2.7 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
+| MiniMax-M2.5 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
+| MiniMax-M2.7 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
+| MiniMax-M3 | Completions | Text + Image | 512K | 128K | $0.30 | $1.20 |
 | Nemotron 3 Ultra Free | Completions | Text | 1.0M | 128K | Free | Free |
 | North Mini Code Free | Completions | Text | 256K | 64K | Free | Free |
 | Qwen3.5 Plus | Anthropic | Text + Image | 262K | 66K | $0.20 | $1.20 |

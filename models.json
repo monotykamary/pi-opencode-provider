@@ -19,7 +19,7 @@
   },
   {
     "id": "minimax-m2.5",
-    "name": "MiniMax M2.5",
+    "name": "MiniMax-M2.5",
     "api": "openai-completions",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
@@ -186,6 +186,25 @@
     "maxTokens": 65536
   },
   {
+    "id": "kimi-k2.7-code",
+    "name": "Kimi K2.7 Code",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.95,
+      "output": 4,
+      "cacheRead": 0.19,
+      "cacheWrite": 0
+    },
+    "contextWindow": 262144,
+    "maxTokens": 262144
+  },
+  {
     "id": "glm-5.1",
     "name": "GLM-5.1",
     "api": "openai-completions",
@@ -260,6 +279,25 @@
     "maxTokens": 128000
   },
   {
+    "id": "claude-sonnet-5",
+    "name": "Claude Sonnet 5",
+    "api": "anthropic-messages",
+    "baseUrl": "https://opencode.ai/zen",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5
+    },
+    "contextWindow": 1000000,
+    "maxTokens": 128000
+  },
+  {
     "id": "gpt-5.4-nano",
     "name": "GPT-5.4 Nano",
     "api": "openai-responses",
@@ -295,6 +333,25 @@
     },
     "contextWindow": 1000000,
     "maxTokens": 131072
+  },
+  {
+    "id": "minimax-m3",
+    "name": "MiniMax-M3",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.06,
+      "cacheWrite": 0
+    },
+    "contextWindow": 512000,
+    "maxTokens": 128000
   },
   {
     "id": "gpt-5.1-codex",
@@ -430,7 +487,7 @@
   },
   {
     "id": "minimax-m2.7",
-    "name": "MiniMax M2.7",
+    "name": "MiniMax-M2.7",
     "api": "openai-completions",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
