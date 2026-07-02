@@ -15,7 +15,7 @@ _GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](http
 
 ## Features
 
-- **49+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **50+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -69,6 +69,7 @@ pi
 | Model | API | Type | Context | Max Tokens | Input Cost | Output Cost |
 |-------|-----|------|---------|------------|------------|-------------|
 | Big Pickle | Completions | Text | 200K | 32K | Free | Free |
+| Claude Fable 5 | Anthropic | Text + Image | 1.0M | 128K | $10.00 | $50.00 |
 | Claude Haiku 4.5 | Anthropic | Text + Image | 200K | 64K | $1.00 | $5.00 |
 | Claude Opus 4.1 | Anthropic | Text + Image | 200K | 32K | $15.00 | $75.00 |
 | Claude Opus 4.5 | Anthropic | Text + Image | 200K | 64K | $5.00 | $25.00 |

@@ -579,6 +579,25 @@
     "maxTokens": 65536
   },
   {
+    "id": "claude-fable-5",
+    "name": "Claude Fable 5",
+    "api": "anthropic-messages",
+    "baseUrl": "https://opencode.ai/zen",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 10,
+      "output": 50,
+      "cacheRead": 1,
+      "cacheWrite": 12.5
+    },
+    "contextWindow": 1000000,
+    "maxTokens": 128000
+  },
+  {
     "id": "claude-haiku-4-5",
     "name": "Claude Haiku 4.5",
     "api": "anthropic-messages",
