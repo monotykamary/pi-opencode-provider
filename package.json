@@ -1,6 +1,6 @@
 {
   "name": "pi-opencode-provider",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Opencode provider extension for pi - Access GPT, Claude, Gemini, GLM, MiniMax, Kimi and more through the opencode.ai API",
   "type": "module",
   "main": "index.ts",
