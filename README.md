@@ -25,7 +25,13 @@ _GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](http
 
 ### Option 1: Using `pi install` (Recommended)
 
-Install directly from GitHub:
+Install from npm:
+
+```bash
+pi install @monotykamary/pi-opencode-provider
+```
+
+Or directly from GitHub:
 
 ```bash
 pi install https://github.com/monotykamary/pi-opencode-provider
