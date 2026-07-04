@@ -302,6 +302,7 @@ export default function (pi: ExtensionAPI) {
   const staleModels = buildModels(staleBase, customModels, patches);
 
   pi.registerProvider("opencode", {
+    name: "OpenCode Zen",
     baseUrl: BASE_URL,
     apiKey: "$OPENCODE_API_KEY",
     api: "openai-completions",
@@ -328,6 +329,7 @@ export default function (pi: ExtensionAPI) {
       revalidateModels(cachedApiKey, embeddedModels, signal).then((freshBase) => {
         if (freshBase && !signal.aborted) {
           pi.registerProvider("opencode", {
+            name: "OpenCode Zen",
             baseUrl: BASE_URL,
             apiKey: "$OPENCODE_API_KEY",
             api: "openai-completions",
