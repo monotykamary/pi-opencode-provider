@@ -4,7 +4,7 @@
       "forceAdaptiveThinking": true
     },
     "thinkingLevelMap": {
-      "xhigh": "max"
+      "max": "max"
     }
   },
   "claude-opus-4-7": {
@@ -33,7 +33,7 @@
       "low": null,
       "medium": null,
       "high": "high",
-      "xhigh": "max"
+      "max": "max"
     }
   },
   "gemini-3-flash": {
