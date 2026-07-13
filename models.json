@@ -541,6 +541,25 @@
     "maxTokens": 64000
   },
   {
+    "id": "gpt-5.6-luna",
+    "name": "GPT-5.6 Luna",
+    "api": "openai-responses",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1,
+      "output": 6,
+      "cacheRead": 0.1,
+      "cacheWrite": 1.25
+    },
+    "contextWindow": 1050000,
+    "maxTokens": 128000
+  },
+  {
     "id": "claude-opus-4-1",
     "name": "Claude Opus 4.1",
     "api": "anthropic-messages",
@@ -598,6 +617,25 @@
     "maxTokens": 65536
   },
   {
+    "id": "gpt-5.6-terra",
+    "name": "GPT-5.6 Terra",
+    "api": "openai-responses",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2.5,
+      "output": 15,
+      "cacheRead": 0.25,
+      "cacheWrite": 3.125
+    },
+    "contextWindow": 1050000,
+    "maxTokens": 128000
+  },
+  {
     "id": "claude-fable-5",
     "name": "Claude Fable 5",
     "api": "anthropic-messages",
@@ -631,7 +669,7 @@
       "cacheRead": 0,
       "cacheWrite": 0
     },
-    "contextWindow": 256000,
+    "contextWindow": 190000,
     "maxTokens": 64000
   },
   {
@@ -859,6 +897,25 @@
     },
     "contextWindow": 204800,
     "maxTokens": 131072
+  },
+  {
+    "id": "gpt-5.6-sol",
+    "name": "GPT-5.6 Sol",
+    "api": "openai-responses",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 5,
+      "output": 30,
+      "cacheRead": 0.5,
+      "cacheWrite": 6.25
+    },
+    "contextWindow": 1050000,
+    "maxTokens": 128000
   },
   {
     "id": "gpt-5-codex",
