@@ -567,7 +567,7 @@
   {
     "id": "grok-4.5",
     "name": "Grok 4.5",
-    "api": "openai-completions",
+    "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
     "input": [
