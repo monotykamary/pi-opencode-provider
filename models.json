@@ -76,24 +76,6 @@
     "maxTokens": 32000
   },
   {
-    "id": "hy3-free",
-    "name": "Hy3 Free",
-    "api": "openai-completions",
-    "baseUrl": "https://opencode.ai/zen/v1",
-    "reasoning": true,
-    "input": [
-      "text"
-    ],
-    "cost": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0
-    },
-    "contextWindow": 190000,
-    "maxTokens": 64000
-  },
-  {
     "id": "gpt-5.4",
     "name": "GPT-5.4",
     "api": "openai-responses",
@@ -319,6 +301,25 @@
     "maxTokens": 128000
   },
   {
+    "id": "gemini-3.6-flash",
+    "name": "Gemini 3.6 Flash",
+    "api": "google-generative-ai",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.5,
+      "output": 7.5,
+      "cacheRead": 0.15,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1048576,
+    "maxTokens": 65536
+  },
+  {
     "id": "kimi-k2.7-code",
     "name": "Kimi K2.7 Code",
     "api": "openai-completions",
@@ -506,6 +507,25 @@
     },
     "contextWindow": 400000,
     "maxTokens": 128000
+  },
+  {
+    "id": "gemini-3.5-flash-lite",
+    "name": "Gemini 3.5 Flash Lite",
+    "api": "google-generative-ai",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.3,
+      "output": 2.5,
+      "cacheRead": 0.03,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1048576,
+    "maxTokens": 65536
   },
   {
     "id": "qwen3.5-plus",
@@ -919,6 +939,24 @@
     },
     "contextWindow": 512000,
     "maxTokens": 128000
+  },
+  {
+    "id": "laguna-s-2.1-free",
+    "name": "Laguna S 2.1 Free",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "contextWindow": 256000,
+    "maxTokens": 32000
   },
   {
     "id": "claude-sonnet-4-5",
