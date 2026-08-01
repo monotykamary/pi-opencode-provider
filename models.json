@@ -429,7 +429,7 @@
   },
   {
     "id": "deepseek-v4-flash-free",
-    "name": "DeepSeek V4 Flash Free",
+    "name": "DeepSeek V4 Flash Free (New)",
     "api": "openai-completions",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
@@ -758,10 +758,10 @@
       "image"
     ],
     "cost": {
-      "input": 1,
-      "output": 6,
-      "cacheRead": 0.1,
-      "cacheWrite": 1.25
+      "input": 0.2,
+      "output": 1.2,
+      "cacheRead": 0.02,
+      "cacheWrite": 0.25
     },
     "contextWindow": 1050000,
     "maxTokens": 128000

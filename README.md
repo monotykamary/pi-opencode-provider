@@ -88,7 +88,7 @@ pi
 | Claude Sonnet 4.6 | Anthropic | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
 | Claude Sonnet 5 | Anthropic | Text + Image | 1.0M | 128K | $2.00 | $10.00 |
 | DeepSeek V4 Flash | Completions | Text | 1.0M | 384K | $0.14 | $0.28 |
-| DeepSeek V4 Flash Free | Completions | Text | 200K | 128K | Free | Free |
+| DeepSeek V4 Flash Free (New) | Completions | Text | 200K | 128K | Free | Free |
 | DeepSeek V4 Pro | Completions | Text | 1.0M | 384K | $1.74 | $3.84 |
 | Gemini 3 Flash | Gemini | Text + Image | 1.0M | 66K | $0.50 | $3.00 |
 | Gemini 3.1 Pro Preview | Gemini | Text + Image | 1.0M | 66K | $2.00 | $12.00 |
@@ -115,7 +115,7 @@ pi
 | GPT-5.4 Pro | Responses | Text + Image | 1.1M | 128K | $30.00 | $180.00 |
 | GPT-5.5 | Responses | Text + Image | 1.1M | 128K | $5.00 | $30.00 |
 | GPT-5.5 Pro | Responses | Text + Image | 1.1M | 128K | $30.00 | $180.00 |
-| GPT-5.6 Luna | Responses | Text + Image | 1.1M | 128K | $1.00 | $6.00 |
+| GPT-5.6 Luna | Responses | Text + Image | 1.1M | 128K | $0.20 | $1.20 |
 | GPT-5.6 Sol | Responses | Text + Image | 1.1M | 128K | $5.00 | $30.00 |
 | GPT-5.6 Terra | Responses | Text + Image | 1.1M | 128K | $2.50 | $15.00 |
 | Grok 4.5 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
