@@ -1,6 +1,6 @@
 {
   "name": "@monotykamary/pi-opencode-provider",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "packageManager": "pnpm@11.18.0",
   "description": "Opencode provider extension for pi - Access GPT, Claude, Gemini, GLM, MiniMax, Kimi and more through the opencode.ai API",
   "type": "module",

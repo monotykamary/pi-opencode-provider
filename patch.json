@@ -1,49 +1,118 @@
 {
-  "claude-opus-4-6": {
-    "compat": {
-      "forceAdaptiveThinking": true
+  "gpt-5.1-codex-mini": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
     },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "claude-sonnet-4-6": {
     "thinkingLevelMap": {
       "max": "max"
-    }
-  },
-  "claude-opus-4-7": {
+    },
     "compat": {
       "forceAdaptiveThinking": true
-    },
-    "thinkingLevelMap": {
-      "xhigh": "xhigh"
     }
   },
-  "claude-opus-4-8": {
-    "compat": {
-      "forceAdaptiveThinking": true
-    },
+  "gpt-5.5-pro": {
     "thinkingLevelMap": {
-      "xhigh": "xhigh"
-    }
-  },
-  "deepseek-v4-flash-free": {
-    "compat": {
-      "requiresReasoningContentOnAssistantMessages": true,
-      "thinkingFormat": "deepseek"
-    },
-    "thinkingLevelMap": {
+      "off": null,
       "minimal": null,
       "low": null,
-      "medium": null,
+      "medium": "medium",
       "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "glm-5": {
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens"
+    }
+  },
+  "gemini-3.5-flash": {
+    "thinkingLevelMap": {
+      "off": null
+    }
+  },
+  "gpt-5.3-codex-spark": {
+    "thinkingLevelMap": {
+      "off": null,
+      "xhigh": "xhigh"
+    }
+  },
+  "gpt-5.4-pro": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": null,
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "gpt-5.6-sol": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
       "max": "max"
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
     }
   },
-  "gemini-3-flash": {
+  "glm-5.1": {
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens"
+    }
+  },
+  "gemini-3.5-flash-lite": {
     "thinkingLevelMap": {
       "off": null
     }
   },
-  "gemini-3-pro": {
+  "claude-opus-4-6": {
     "thinkingLevelMap": {
-      "off": null
+      "max": "max"
+    },
+    "compat": {
+      "forceAdaptiveThinking": true
+    }
+  },
+  "claude-fable-5": {
+    "thinkingLevelMap": {
+      "off": null,
+      "xhigh": "xhigh",
+      "max": "max"
+    },
+    "compat": {
+      "forceAdaptiveThinking": true
     }
   },
   "gemini-3.1-pro": {
@@ -55,117 +124,527 @@
       "high": "HIGH"
     }
   },
-  "gemini-3.5-flash": {
+  "deepseek-v4-flash": {
+    "name": "DeepSeek V4 Flash",
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": null,
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens",
+      "supportsLongCacheRetention": false,
+      "requiresReasoningContentOnAssistantMessages": true
+    }
+  },
+  "kimi-k2.5": {
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens",
+      "supportsLongCacheRetention": false
+    }
+  },
+  "minimax-m2.7": {
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens",
+      "supportsLongCacheRetention": false
+    }
+  },
+  "claude-opus-4-8": {
+    "thinkingLevelMap": {
+      "xhigh": "xhigh",
+      "max": "max"
+    },
+    "compat": {
+      "forceAdaptiveThinking": true,
+      "supportsTemperature": false
+    }
+  },
+  "north-mini-code-free": {
+    "thinkingLevelMap": {
+      "off": "none",
+      "minimal": null,
+      "low": null,
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens"
+    }
+  },
+  "glm-5.2": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": null,
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens"
+    }
+  },
+  "ling-3.0-flash-free": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens"
+    }
+  },
+  "laguna-s-2.1-free": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens"
+    }
+  },
+  "deepseek-v4-flash-free": {
+    "name": "DeepSeek V4 Flash Free",
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": null,
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens",
+      "requiresReasoningContentOnAssistantMessages": true
+    }
+  },
+  "gemini-3-flash": {
     "thinkingLevelMap": {
       "off": null
     }
   },
-  "gpt-5": {
-    "thinkingLevelMap": {
-      "off": null
-    }
-  },
-  "gpt-5-codex": {
-    "thinkingLevelMap": {
-      "off": null
-    }
-  },
-  "gpt-5-nano": {
-    "thinkingLevelMap": {
-      "off": null
-    }
-  },
-  "gpt-5.1": {
-    "thinkingLevelMap": {
-      "off": null
-    }
-  },
-  "gpt-5.1-codex": {
-    "thinkingLevelMap": {
-      "off": null
-    }
-  },
-  "gpt-5.1-codex-max": {
-    "thinkingLevelMap": {
-      "off": null
-    }
-  },
-  "gpt-5.1-codex-mini": {
-    "thinkingLevelMap": {
-      "off": null
-    }
-  },
-  "gpt-5.2": {
-    "thinkingLevelMap": {
-      "off": null,
-      "xhigh": "xhigh"
-    }
-  },
-  "gpt-5.2-codex": {
-    "thinkingLevelMap": {
-      "off": null,
-      "xhigh": "xhigh"
-    }
-  },
-  "gpt-5.3-codex": {
-    "thinkingLevelMap": {
-      "off": null,
-      "xhigh": "xhigh"
-    }
-  },
-  "gpt-5.3-codex-spark": {
-    "thinkingLevelMap": {
-      "off": null,
-      "xhigh": "xhigh"
-    }
-  },
-  "gpt-5.4": {
-    "thinkingLevelMap": {
-      "off": null,
-      "xhigh": "xhigh"
-    }
-  },
-  "gpt-5.4-mini": {
-    "thinkingLevelMap": {
-      "off": null,
-      "xhigh": "xhigh"
-    }
-  },
-  "gpt-5.4-nano": {
-    "thinkingLevelMap": {
-      "off": null,
-      "xhigh": "xhigh"
-    }
-  },
-  "gpt-5.4-pro": {
-    "thinkingLevelMap": {
-      "off": null,
-      "xhigh": "xhigh"
+  "kimi-k2.6": {
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "thinkingFormat": "deepseek",
+      "supportsReasoningEffort": false,
+      "maxTokensField": "max_tokens",
+      "supportsLongCacheRetention": false
     }
   },
   "gpt-5.5": {
     "thinkingLevelMap": {
       "off": null,
-      "xhigh": "xhigh"
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
     }
   },
-  "gpt-5.5-pro": {
+  "minimax-m3": {
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens"
+    }
+  },
+  "gpt-5": {
     "thinkingLevelMap": {
       "off": null,
-      "xhigh": "xhigh",
+      "minimal": "minimal",
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "gpt-5-codex": {
+    "thinkingLevelMap": {
+      "off": null,
       "minimal": null,
-      "low": null
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "claude-sonnet-4-5": {
+    "contextWindow": 200000
+  },
+  "deepseek-v4-pro": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": null,
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens",
+      "supportsLongCacheRetention": false,
+      "requiresReasoningContentOnAssistantMessages": true
+    }
+  },
+  "gpt-5.4": {
+    "contextWindow": 272000,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "gpt-5.2-codex": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "gpt-5.4-nano": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "gemini-3.6-flash": {
+    "thinkingLevelMap": {
+      "off": null
+    }
+  },
+  "claude-sonnet-4": {
+    "contextWindow": 200000
+  },
+  "gpt-5.4-mini": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "minimax-m2.5": {
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens"
+    }
+  },
+  "gpt-5.6-luna": {
+    "cost": {
+      "input": 1,
+      "output": 6,
+      "cacheRead": 0.1,
+      "cacheWrite": 1.25
+    },
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": "max"
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "mimo-v2.5-free": {
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens"
+    }
+  },
+  "gpt-5.2": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "gpt-5.3-codex": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "grok-4.5": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession"
+    }
+  },
+  "kimi-k2.7-code": {
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens"
+    }
+  },
+  "gpt-5.1": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "big-pickle": {
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens"
     }
   },
   "grok-build-0.1": {
-    "compat": {
-      "supportsReasoningEffort": false
-    },
     "thinkingLevelMap": {
       "off": null,
       "minimal": null,
       "low": null,
       "medium": null
+    },
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "supportsReasoningEffort": false,
+      "maxTokensField": "max_tokens"
+    }
+  },
+  "kimi-k3": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": null,
+      "medium": null,
+      "high": null,
+      "xhigh": null,
+      "max": "max"
+    },
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens"
+    }
+  },
+  "gpt-5.1-codex": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "gpt-5-nano": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": "minimal",
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "claude-opus-4-7": {
+    "thinkingLevelMap": {
+      "xhigh": "xhigh",
+      "max": "max"
+    },
+    "compat": {
+      "forceAdaptiveThinking": true,
+      "supportsTemperature": false
+    }
+  },
+  "gpt-5.6-terra": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": "max"
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "claude-sonnet-5": {
+    "thinkingLevelMap": {
+      "xhigh": "xhigh",
+      "max": "max"
+    },
+    "compat": {
+      "forceAdaptiveThinking": true
+    }
+  },
+  "nemotron-3-ultra-free": {
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens"
+    }
+  },
+  "claude-opus-5": {
+    "thinkingLevelMap": {
+      "xhigh": "xhigh",
+      "max": "max"
+    },
+    "compat": {
+      "forceAdaptiveThinking": true,
+      "supportsTemperature": false
+    }
+  },
+  "gpt-5.1-codex-max": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
+    "compat": {
+      "sessionAffinityFormat": "openai-nosession",
+      "supportsOpenAIGrammarTools": true
+    }
+  },
+  "gemini-3-pro": {
+    "thinkingLevelMap": {
+      "off": null
     }
   },
   "grok-code": {
@@ -174,17 +653,6 @@
     },
     "thinkingLevelMap": {
       "off": null,
-      "minimal": null,
-      "low": null,
-      "medium": null
-    }
-  },
-  "kimi-k2.6": {
-    "compat": {
-      "thinkingFormat": "deepseek",
-      "supportsReasoningEffort": false
-    },
-    "thinkingLevelMap": {
       "minimal": null,
       "low": null,
       "medium": null

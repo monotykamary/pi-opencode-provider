@@ -15,7 +15,7 @@ _GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](http
 
 ## Features
 
-- **60+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **62+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -83,14 +83,15 @@ pi
 | Claude Opus 4.7 | Anthropic | Text + Image | 1.0M | 128K | $5.00 | $25.00 |
 | Claude Opus 4.8 | Anthropic | Text + Image | 1.0M | 128K | $5.00 | $25.00 |
 | Claude Opus 5 | Anthropic | Text + Image | 1.0M | 128K | $5.00 | $25.00 |
-| Claude Sonnet 4 | Anthropic | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
-| Claude Sonnet 4.5 | Anthropic | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
+| Claude Sonnet 4 | Anthropic | Text + Image | 200K | 64K | $3.00 | $15.00 |
+| Claude Sonnet 4.5 | Anthropic | Text + Image | 200K | 64K | $3.00 | $15.00 |
 | Claude Sonnet 4.6 | Anthropic | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
 | Claude Sonnet 5 | Anthropic | Text + Image | 1.0M | 128K | $2.00 | $10.00 |
 | DeepSeek V4 Flash | Completions | Text | 1.0M | 384K | $0.14 | $0.28 |
-| DeepSeek V4 Flash Free (New) | Completions | Text | 200K | 128K | Free | Free |
+| DeepSeek V4 Flash Free | Completions | Text | 200K | 128K | Free | Free |
 | DeepSeek V4 Pro | Completions | Text | 1.0M | 384K | $1.74 | $3.84 |
 | Gemini 3 Flash | Gemini | Text + Image | 1.0M | 66K | $0.50 | $3.00 |
+| Gemini 3 Pro | Gemini | Text + Image | 1.0M | 66K | $1.25 | $10.00 |
 | Gemini 3.1 Pro Preview | Gemini | Text + Image | 1.0M | 66K | $2.00 | $12.00 |
 | Gemini 3.5 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $9.00 |
 | Gemini 3.5 Flash Lite | Gemini | Text + Image | 1.0M | 66K | $0.30 | $2.50 |
@@ -109,17 +110,18 @@ pi
 | GPT-5.2 Codex | Responses | Text + Image | 400K | 128K | $1.75 | $14.00 |
 | GPT-5.3 Codex | Responses | Text + Image | 400K | 128K | $1.75 | $14.00 |
 | GPT-5.3 Codex Spark | Responses | Text | 128K | 128K | $1.75 | $14.00 |
-| GPT-5.4 | Responses | Text + Image | 1.1M | 128K | $2.50 | $15.00 |
+| GPT-5.4 | Responses | Text + Image | 272K | 128K | $2.50 | $15.00 |
 | GPT-5.4 Mini | Responses | Text + Image | 400K | 128K | $0.75 | $4.50 |
 | GPT-5.4 Nano | Responses | Text + Image | 400K | 128K | $0.20 | $1.25 |
 | GPT-5.4 Pro | Responses | Text + Image | 1.1M | 128K | $30.00 | $180.00 |
 | GPT-5.5 | Responses | Text + Image | 1.1M | 128K | $5.00 | $30.00 |
 | GPT-5.5 Pro | Responses | Text + Image | 1.1M | 128K | $30.00 | $180.00 |
-| GPT-5.6 Luna | Responses | Text + Image | 1.1M | 128K | $0.20 | $1.20 |
+| GPT-5.6 Luna | Responses | Text + Image | 1.1M | 128K | $1.00 | $6.00 |
 | GPT-5.6 Sol | Responses | Text + Image | 1.1M | 128K | $5.00 | $30.00 |
 | GPT-5.6 Terra | Responses | Text + Image | 1.1M | 128K | $2.50 | $15.00 |
 | Grok 4.5 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
 | Grok Build 0.1 | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
+| Grok Code | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
 | Kimi K2.5 | Completions | Text + Image | 262K | 66K | $0.60 | $3.00 |
 | Kimi K2.6 | Completions | Text + Image | 262K | 66K | $0.95 | $4.00 |
 | Kimi K2.7 Code | Completions | Text + Image | 262K | 262K | $0.95 | $4.00 |
