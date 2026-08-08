@@ -119,14 +119,14 @@ pi
 | GPT-5.6 Sol | Responses | Text + Image | 1.1M | 128K | $5.00 | $30.00 |
 | GPT-5.6 Terra | Responses | Text + Image | 1.1M | 128K | $2.50 | $15.00 |
 | Grok 4.5 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
-| Grok Build 0.1 | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
+| Grok Build 0.1 | Responses | Text + Image | 256K | 256K | $1.00 | $2.00 |
 | Grok Code | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
 | Kimi K2.5 | Completions | Text + Image | 262K | 66K | $0.60 | $3.00 |
 | Kimi K2.6 | Completions | Text + Image | 262K | 66K | $0.95 | $4.00 |
 | Kimi K2.7 Code | Completions | Text + Image | 262K | 262K | $0.95 | $4.00 |
 | Kimi K3 | Completions | Text + Image | 1.0M | 131K | $3.00 | $15.00 |
 | Laguna S 2.1 Free | Completions | Text | 256K | 32K | Free | Free |
-| Ling-3.0-flash Free | Completions | Text | 262K | 33K | Free | Free |
+| Ling-3.0-tiny Free | Completions | Text | 262K | 33K | Free | Free |
 | LongCat-2.0 Free | Completions | Text | 1.0M | 131K | Free | Free |
 | MiMo V2.5 Free | Completions | Text + Image | 200K | 32K | Free | Free |
 | MiniMax-M2.5 | Completions | Text | 205K | 131K | $0.30 | $1.20 |

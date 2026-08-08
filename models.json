@@ -283,7 +283,7 @@
   },
   {
     "id": "deepseek-v4-flash",
-    "name": "DeepSeek V4 Flash (New)",
+    "name": "DeepSeek V4 Flash",
     "api": "openai-completions",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
@@ -410,24 +410,6 @@
     "maxTokens": 131072
   },
   {
-    "id": "ling-3.0-flash-free",
-    "name": "Ling-3.0-flash Free",
-    "api": "openai-completions",
-    "baseUrl": "https://opencode.ai/zen/v1",
-    "reasoning": true,
-    "input": [
-      "text"
-    ],
-    "cost": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0
-    },
-    "contextWindow": 262144,
-    "maxTokens": 32768
-  },
-  {
     "id": "laguna-s-2.1-free",
     "name": "Laguna S 2.1 Free",
     "api": "openai-completions",
@@ -447,7 +429,7 @@
   },
   {
     "id": "deepseek-v4-flash-free",
-    "name": "DeepSeek V4 Flash Free (New)",
+    "name": "DeepSeek V4 Flash Free",
     "api": "openai-completions",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
@@ -613,6 +595,24 @@
     },
     "contextWindow": 1000000,
     "maxTokens": 384000
+  },
+  {
+    "id": "ling-3.0-tiny-free",
+    "name": "Ling-3.0-tiny Free",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "contextWindow": 262144,
+    "maxTokens": 32768
   },
   {
     "id": "gpt-5.4",
@@ -900,7 +900,7 @@
   {
     "id": "grok-build-0.1",
     "name": "Grok Build 0.1",
-    "api": "openai-completions",
+    "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
     "input": [
