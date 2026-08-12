@@ -185,6 +185,13 @@
       "maxTokensField": "max_tokens"
     }
   },
+  "longcat-2.0-free": {
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens"
+    }
+  },
   "glm-5.2": {
     "thinkingLevelMap": {
       "off": null,
@@ -416,12 +423,6 @@
     }
   },
   "gpt-5.6-luna": {
-    "cost": {
-      "input": 1,
-      "output": 6,
-      "cacheRead": 0.1,
-      "cacheWrite": 1.25
-    },
     "thinkingLevelMap": {
       "off": null,
       "minimal": null,
@@ -517,6 +518,7 @@
     }
   },
   "grok-build-0.1": {
+    "api": "openai-completions",
     "thinkingLevelMap": {
       "off": null,
       "minimal": null,
