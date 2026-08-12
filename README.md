@@ -15,7 +15,7 @@ _GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](http
 
 ## Features
 
-- **62+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **63+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -121,6 +121,7 @@ pi
 | Grok 4.5 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
 | Grok Build 0.1 | Responses | Text + Image | 256K | 256K | $1.00 | $2.00 |
 | Grok Code | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
+| Hy3 Free | Completions | Text | 190K | 64K | Free | Free |
 | Kimi K2.5 | Completions | Text + Image | 262K | 66K | $0.60 | $3.00 |
 | Kimi K2.6 | Completions | Text + Image | 262K | 66K | $0.95 | $4.00 |
 | Kimi K2.7 Code | Completions | Text + Image | 262K | 262K | $0.95 | $4.00 |
@@ -133,7 +134,7 @@ pi
 | MiniMax-M2.7 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
 | MiniMax-M3 | Completions | Text + Image | 512K | 128K | $0.30 | $1.20 |
 | Nemotron 3 Ultra Free | Completions | Text | 1.0M | 128K | Free | Free |
-| North Mini Code Free | Completions | Text | 256K | 64K | Free | Free |
+| Nemotron 3.5 Lightning Free | Completions | Text | 262K | 262K | Free | Free |
 | Qwen3.5 Plus | Anthropic | Text + Image | 262K | 66K | $0.20 | $1.20 |
 | Qwen3.6 Plus | Anthropic | Text + Image | 262K | 66K | $0.50 | $3.00 |
 *Costs are per million tokens. Prices subject to change - check [opencode.ai](https://opencode.ai) for current pricing.*
