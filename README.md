@@ -15,7 +15,7 @@ _GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](http
 
 ## Features
 
-- **63+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **62+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -128,7 +128,6 @@ pi
 | Kimi K3 | Completions | Text + Image | 1.0M | 131K | $3.00 | $15.00 |
 | Laguna S 2.1 Free | Completions | Text | 256K | 32K | Free | Free |
 | Ling-3.0-tiny Free | Completions | Text | 262K | 33K | Free | Free |
-| LongCat-2.0 Free | Completions | Text | 1.0M | 131K | Free | Free |
 | MiMo V2.5 Free | Completions | Text + Image | 200K | 32K | Free | Free |
 | MiniMax-M2.5 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
 | MiniMax-M2.7 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
