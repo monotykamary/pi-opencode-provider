@@ -674,6 +674,25 @@
     "maxTokens": 64000
   },
   {
+    "id": "muse-spark-1.2",
+    "name": "Muse Spark 1.2",
+    "api": "openai-responses",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 4.25,
+      "cacheRead": 0.15,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1048576,
+    "maxTokens": 131072
+  },
+  {
     "id": "claude-sonnet-4",
     "name": "Claude Sonnet 4",
     "api": "anthropic-messages",
