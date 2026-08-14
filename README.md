@@ -95,6 +95,7 @@ pi
 | Gemini 3.5 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $9.00 |
 | Gemini 3.5 Flash Lite | Gemini | Text + Image | 1.0M | 66K | $0.30 | $2.50 |
 | Gemini 3.6 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $7.50 |
+| Gemini 3.7 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $7.50 |
 | GLM-5 | Completions | Text | 205K | 131K | $1.00 | $3.20 |
 | GLM-5.1 | Completions | Text | 205K | 131K | $1.40 | $4.40 |
 | GLM-5.2 | Completions | Text | 1.0M | 131K | $1.40 | $4.40 |
@@ -128,7 +129,6 @@ pi
 | Kimi K2.7 Code | Completions | Text + Image | 262K | 262K | $0.95 | $4.00 |
 | Kimi K3 | Completions | Text + Image | 1.0M | 131K | $3.00 | $15.00 |
 | Laguna S 2.1 Free | Completions | Text | 256K | 32K | Free | Free |
-| Ling-3.0-tiny Free | Completions | Text | 262K | 33K | Free | Free |
 | MiMo V2.5 Free | Completions | Text + Image | 200K | 32K | Free | Free |
 | MiniMax-M2.5 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
 | MiniMax-M2.7 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
