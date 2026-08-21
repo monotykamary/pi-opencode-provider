@@ -563,7 +563,7 @@
   },
   {
     "id": "x-preview-f-free",
-    "name": "Ox Alpha Free",
+    "name": "Ox Alpha Free (Unlimited)",
     "api": "openai-completions",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
