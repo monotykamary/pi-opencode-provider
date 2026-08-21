@@ -1,4 +1,23 @@
 {
+  "x-preview-f-free": {
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
+    "compat": {
+      "supportsStore": false,
+      "supportsDeveloperRole": false,
+      "maxTokensField": "max_tokens",
+      "requiresReasoningContentOnAssistantMessages": true,
+      "thinkingFormat": "deepseek",
+      "supportsReasoningEffort": true
+    }
+  },
   "gpt-5.1-codex-mini": {
     "thinkingLevelMap": {
       "off": null,
