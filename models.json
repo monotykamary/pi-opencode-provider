@@ -5,6 +5,15 @@
     "api": "anthropic-messages",
     "baseUrl": "https://opencode.ai/zen",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": "max"
+    },
     "input": [
       "text",
       "image"
@@ -61,6 +70,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": "minimal",
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -80,6 +98,15 @@
     "api": "openai-completions",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": null,
+      "medium": null,
+      "high": null,
+      "xhigh": null,
+      "max": "max"
+    },
     "input": [
       "text",
       "image"
@@ -99,6 +126,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": null,
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -118,6 +154,15 @@
     "api": "openai-completions",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
     "input": [
       "text"
     ],
@@ -136,6 +181,15 @@
     "api": "anthropic-messages",
     "baseUrl": "https://opencode.ai/zen",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": "max"
+    },
     "input": [
       "text",
       "image"
@@ -155,6 +209,15 @@
     "api": "google-generative-ai",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": "minimal",
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -174,6 +237,15 @@
     "api": "google-generative-ai",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -193,15 +265,24 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": "max"
+    },
     "input": [
       "text",
       "image"
     ],
     "cost": {
-      "input": 2.5,
-      "output": 15,
-      "cacheRead": 0.25,
-      "cacheWrite": 3.125
+      "input": 2,
+      "output": 10,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5
     },
     "contextWindow": 1050000,
     "maxTokens": 128000
@@ -212,6 +293,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -231,6 +321,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": null,
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -268,6 +367,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -287,6 +395,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": "minimal",
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -306,6 +423,15 @@
     "api": "openai-completions",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": null,
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
     "input": [
       "text"
     ],
@@ -324,6 +450,15 @@
     "api": "anthropic-messages",
     "baseUrl": "https://opencode.ai/zen",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": "max"
+    },
     "input": [
       "text",
       "image"
@@ -362,6 +497,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -381,6 +525,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -400,6 +553,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": "max"
+    },
     "input": [
       "text",
       "image"
@@ -474,6 +636,15 @@
     "api": "openai-completions",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
     "input": [
       "text"
     ],
@@ -492,6 +663,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -530,6 +710,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
     "input": [
       "text"
     ],
@@ -548,6 +737,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": "minimal",
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -595,6 +793,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -614,6 +821,15 @@
     "api": "google-generative-ai",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": "minimal",
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -633,6 +849,15 @@
     "api": "anthropic-messages",
     "baseUrl": "https://opencode.ai/zen",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -652,6 +877,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -671,6 +905,15 @@
     "api": "anthropic-messages",
     "baseUrl": "https://opencode.ai/zen",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
     "input": [
       "text",
       "image"
@@ -690,6 +933,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": "minimal",
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -709,6 +961,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -747,6 +1008,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -785,6 +1055,15 @@
     "api": "openai-completions",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": null,
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
     "input": [
       "text"
     ],
@@ -840,6 +1119,15 @@
     "api": "google-generative-ai",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": "minimal",
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -859,6 +1147,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": "max"
+    },
     "input": [
       "text",
       "image"
@@ -878,6 +1175,15 @@
     "api": "google-generative-ai",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": "minimal",
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -897,6 +1203,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -935,6 +1250,15 @@
     "api": "anthropic-messages",
     "baseUrl": "https://opencode.ai/zen",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": "max"
+    },
     "input": [
       "text",
       "image"
@@ -1009,6 +1333,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -1028,6 +1361,15 @@
     "api": "anthropic-messages",
     "baseUrl": "https://opencode.ai/zen",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
     "input": [
       "text",
       "image"
@@ -1047,6 +1389,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -1066,6 +1417,15 @@
     "api": "anthropic-messages",
     "baseUrl": "https://opencode.ai/zen",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": "max"
+    },
     "input": [
       "text",
       "image"
@@ -1104,6 +1464,15 @@
     "api": "google-generative-ai",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -1123,6 +1492,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
     "input": [
       "text",
       "image"
@@ -1161,6 +1539,15 @@
     "api": "openai-responses",
     "baseUrl": "https://opencode.ai/zen/v1",
     "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
     "input": [
       "text",
       "image"

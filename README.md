@@ -116,7 +116,7 @@ pi
 | GPT-5.5 | Responses | Text + Image | 1.1M | 128K | $5.00 | $30.00 |
 | GPT-5.5 Pro | Responses | Text + Image | 1.1M | 128K | $30.00 | $180.00 |
 | GPT-5.6 Luna | Responses | Text + Image | 1.1M | 128K | $0.20 | $1.20 |
-| GPT-5.6 Sol (50% Off) | Responses | Text + Image | 1.1M | 128K | $2.50 | $15.00 |
+| GPT-5.6 Sol (50% Off) | Responses | Text + Image | 1.1M | 128K | $2.00 | $10.00 |
 | GPT-5.6 Terra | Responses | Text + Image | 1.1M | 128K | $2.50 | $15.00 |
 | Grok 4.5 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
 | Grok 4.6 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
