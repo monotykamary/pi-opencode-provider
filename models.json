@@ -649,33 +649,6 @@
     "maxTokens": 131072
   },
   {
-    "id": "hy3-free",
-    "name": "Hy3 Free",
-    "api": "openai-completions",
-    "baseUrl": "https://opencode.ai/zen/v1",
-    "reasoning": true,
-    "thinkingLevelMap": {
-      "off": null,
-      "minimal": null,
-      "low": "low",
-      "medium": "medium",
-      "high": "high",
-      "xhigh": null,
-      "max": null
-    },
-    "input": [
-      "text"
-    ],
-    "cost": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0
-    },
-    "contextWindow": 190000,
-    "maxTokens": 64000
-  },
-  {
     "id": "gpt-5.3-codex",
     "name": "GPT-5.3 Codex",
     "api": "openai-responses",
