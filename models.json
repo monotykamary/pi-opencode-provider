@@ -316,6 +316,34 @@
     "maxTokens": 500000
   },
   {
+    "id": "claude-fable-5-1",
+    "name": "Claude Fable 5.1",
+    "api": "anthropic-messages",
+    "baseUrl": "https://opencode.ai/zen",
+    "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": "max"
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 10,
+      "output": 50,
+      "cacheRead": 0.25,
+      "cacheWrite": 12.5
+    },
+    "contextWindow": 1000000,
+    "maxTokens": 128000
+  },
+  {
     "id": "gpt-5.4-pro",
     "name": "GPT-5.4 Pro",
     "api": "openai-responses",
@@ -1040,6 +1068,34 @@
     "maxTokens": 131072
   },
   {
+    "id": "muse-spark-1.3-contributor-free",
+    "name": "Muse Spark 1.3 Free",
+    "api": "openai-responses",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": "minimal",
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1048576,
+    "maxTokens": 131072
+  },
+  {
     "id": "mimo-v2.5-free",
     "name": "MiMo V2.5 Free",
     "api": "openai-completions",
@@ -1252,6 +1308,34 @@
     },
     "contextWindow": 204800,
     "maxTokens": 131072
+  },
+  {
+    "id": "gemini-3.8-flash",
+    "name": "Gemini 3.8 Flash",
+    "api": "google-generative-ai",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.5,
+      "output": 7.5,
+      "cacheRead": 0.15,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1048576,
+    "maxTokens": 65536
   },
   {
     "id": "big-pickle",

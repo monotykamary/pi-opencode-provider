@@ -15,7 +15,7 @@ _GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](http
 
 ## Features
 
-- **63+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **66+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -76,6 +76,7 @@ pi
 |-------|-----|------|---------|------------|------------|-------------|
 | Big Pickle | Completions | Text | 200K | 32K | — | — |
 | Claude Fable 5 | Anthropic | Text + Image | 1.0M | 128K | $10.00 | $50.00 |
+| Claude Fable 5.1 | Anthropic | Text + Image | 1.0M | 128K | $10.00 | $50.00 |
 | Claude Haiku 4.5 | Anthropic | Text + Image | 200K | 64K | $1.00 | $5.00 |
 | Claude Opus 4.5 | Anthropic | Text + Image | 200K | 64K | $5.00 | $25.00 |
 | Claude Opus 4.6 | Anthropic | Text + Image | 1.0M | 128K | $5.00 | $25.00 |
@@ -95,6 +96,7 @@ pi
 | Gemini 3.5 Flash Lite | Gemini | Text + Image | 1.0M | 66K | $0.30 | $2.50 |
 | Gemini 3.6 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $7.50 |
 | Gemini 3.7 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $7.50 |
+| Gemini 3.8 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $7.50 |
 | GLM-5 | Completions | Text | 205K | 131K | $1.00 | $3.20 |
 | GLM-5.1 | Completions | Text | 205K | 131K | $1.40 | $4.40 |
 | GLM-5.2 | Completions | Text | 1.0M | 131K | $1.40 | $4.40 |
@@ -133,6 +135,7 @@ pi
 | MiniMax-M3 | Completions | Text + Image | 512K | 128K | $0.30 | $1.20 |
 | Muse Spark 1.2 | Responses | Text + Image | 1.0M | 131K | $1.25 | $4.25 |
 | Muse Spark 1.2 Free | Responses | Text + Image | 1.0M | 131K | — | — |
+| Muse Spark 1.3 Free | Responses | Text + Image | 1.0M | 131K | — | — |
 | Nemotron 3 Ultra Free | Completions | Text | 1.0M | 128K | — | — |
 | Nemotron 3.5 Lightning Free | Completions | Text | 262K | 262K | — | — |
 | Qwen3.5 Plus | Anthropic | Text + Image | 262K | 66K | $0.20 | $1.20 |
