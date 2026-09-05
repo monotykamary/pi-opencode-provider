@@ -15,7 +15,7 @@ _GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](http
 
 ## Features
 
-- **66+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **71+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -88,6 +88,7 @@ pi
 | Claude Sonnet 4.6 | Anthropic | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
 | Claude Sonnet 5 | Anthropic | Text + Image | 1.0M | 128K | $2.00 | $10.00 |
 | DeepSeek V4 Flash | Completions | Text | 1.0M | 384K | $0.14 | $0.28 |
+| DeepSeek V4 Flash Vision Exp | Completions | Text + Image | 1.0M | 384K | $0.14 | $0.28 |
 | DeepSeek V4 Pro | Completions | Text | 1.0M | 384K | $1.74 | $3.84 |
 | Gemini 3 Flash | Gemini | Text + Image | 1.0M | 66K | $0.50 | $3.00 |
 | Gemini 3 Pro | Gemini | Text + Image | 1.0M | 66K | $1.25 | $10.00 |
@@ -100,6 +101,8 @@ pi
 | GLM-5 | Completions | Text | 205K | 131K | $1.00 | $3.20 |
 | GLM-5.1 | Completions | Text | 205K | 131K | $1.40 | $4.40 |
 | GLM-5.2 | Completions | Text | 1.0M | 131K | $1.40 | $4.40 |
+| GLM-5.3 | Completions | Text | 1.0M | 131K | $1.40 | $4.40 |
+| GLM-5.3-Flash | Completions | Text + Image | 1.0M | 131K | $0.15 | $0.50 |
 | GPT-5 | Responses | Text + Image | 400K | 128K | $1.07 | $8.50 |
 | GPT-5 Codex | Responses | Text + Image | 400K | 128K | $1.07 | $8.50 |
 | GPT-5 Nano | Responses | Text + Image | 400K | 128K | $0.05 | $0.40 |
@@ -120,6 +123,7 @@ pi
 | GPT-5.6 Luna | Responses | Text + Image | 1.1M | 128K | $0.20 | $1.20 |
 | GPT-5.6 Sol (50% Off) | Responses | Text + Image | 1.1M | 128K | $2.00 | $10.00 |
 | GPT-5.6 Terra | Responses | Text + Image | 1.1M | 128K | $2.50 | $15.00 |
+| GPT-6 Astra | Responses | Text + Image | 1.1M | 128K | $10.00 | $50.00 |
 | Grok 4.5 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
 | Grok 4.6 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
 | Grok Build 0.1 | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
@@ -135,6 +139,7 @@ pi
 | MiniMax-M3 | Completions | Text + Image | 512K | 128K | $0.30 | $1.20 |
 | Muse Spark 1.2 | Responses | Text + Image | 1.0M | 131K | $1.25 | $4.25 |
 | Muse Spark 1.2 Free | Responses | Text + Image | 1.0M | 131K | — | — |
+| Muse Spark 1.3 | Responses | Text + Image | 1.0M | 131K | $1.25 | $4.25 |
 | Muse Spark 1.3 Free | Responses | Text + Image | 1.0M | 131K | — | — |
 | Nemotron 3 Ultra Free | Completions | Text | 1.0M | 128K | — | — |
 | Nemotron 3.5 Lightning Free | Completions | Text | 262K | 262K | — | — |
