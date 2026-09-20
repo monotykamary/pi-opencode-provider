@@ -142,7 +142,7 @@
       "medium": "medium",
       "high": "high",
       "xhigh": "xhigh",
-      "max": "max"
+      "max": null
     },
     "input": [
       "text",
@@ -212,6 +212,24 @@
     },
     "contextWindow": 400000,
     "maxTokens": 128000
+  },
+  {
+    "id": "jev-1.13",
+    "name": "Jev 1.13",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.042,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "contextWindow": 64000,
+    "maxTokens": 0
   },
   {
     "id": "muse-spark-1.2",
@@ -734,6 +752,52 @@
     "maxTokens": 256000
   },
   {
+    "id": "deepseek-v4.1-flash",
+    "name": "DeepSeek V4.1 Flash",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.006,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1000000,
+    "maxTokens": 384000
+  },
+  {
+    "id": "jev-1.13-free",
+    "name": "Jev 1.13 Free",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "contextWindow": 64000,
+    "maxTokens": 0
+  },
+  {
     "id": "claude-fable-5-1",
     "name": "Claude Fable 5.1",
     "api": "anthropic-messages",
@@ -1189,6 +1253,34 @@
     },
     "contextWindow": 1050000,
     "maxTokens": 128000
+  },
+  {
+    "id": "qwen3.8-flash",
+    "name": "Qwen3.8 Flash",
+    "api": "anthropic-messages",
+    "baseUrl": "https://opencode.ai/zen",
+    "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": null,
+      "xhigh": "xhigh",
+      "max": null
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.15,
+      "output": 0.47,
+      "cacheRead": 0.016,
+      "cacheWrite": 0.2
+    },
+    "contextWindow": 1000000,
+    "maxTokens": 131072
   },
   {
     "id": "big-pickle",

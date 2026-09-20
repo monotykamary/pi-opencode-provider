@@ -15,7 +15,7 @@ _GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](http
 
 ## Features
 
-- **72+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **76+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -90,6 +90,7 @@ pi
 | DeepSeek V4 Flash | Completions | Text | 1.0M | 384K | $0.14 | $0.28 |
 | DeepSeek V4 Flash Vision Exp | Completions | Text + Image | 1.0M | 384K | $0.14 | $0.28 |
 | DeepSeek V4 Pro | Completions | Text | 1.0M | 384K | $1.74 | $3.84 |
+| DeepSeek V4.1 Flash | Completions | Text + Image | 1.0M | 384K | $0.30 | $1.20 |
 | Gemini 3 Flash | Gemini | Text + Image | 1.0M | 66K | $0.50 | $3.00 |
 | Gemini 3 Pro | Gemini | Text + Image | 1.0M | 66K | $1.25 | $10.00 |
 | Gemini 3.1 Pro Preview | Gemini | Text + Image | 1.0M | 66K | $2.00 | $12.00 |
@@ -129,6 +130,8 @@ pi
 | Grok Build 0.1 | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
 | Grok Code | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
 | Jev | Completions | Text | 64K | 0 | $0.04 | — |
+| Jev 1.13 | Completions | Text | 64K | 0 | $0.04 | — |
+| Jev 1.13 Free | Completions | Text | 64K | 0 | — | — |
 | Kimi K2.5 | Completions | Text + Image | 262K | 66K | $0.60 | $3.00 |
 | Kimi K2.6 | Completions | Text + Image | 262K | 66K | $0.95 | $4.00 |
 | Kimi K2.7 Code | Completions | Text + Image | 262K | 262K | $0.95 | $4.00 |
@@ -146,6 +149,7 @@ pi
 | Nemotron 3.5 Lightning Free | Completions | Text | 262K | 262K | — | — |
 | Qwen3.5 Plus | Anthropic | Text + Image | 262K | 66K | $0.20 | $1.20 |
 | Qwen3.6 Plus | Anthropic | Text + Image | 262K | 66K | $0.50 | $3.00 |
+| Qwen3.8 Flash | Anthropic | Text + Image | 1.0M | 131K | $0.15 | $0.47 |
 *Costs are per million tokens. Prices subject to change - check [opencode.ai](https://opencode.ai) for current pricing.*
 
 ## Usage
