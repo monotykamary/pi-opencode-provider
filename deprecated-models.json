@@ -18,5 +18,62 @@
     "contextWindow": 262144,
     "maxTokens": 131072,
     "deprecatedAt": "2026-09-18T00:00:22.595Z"
+  },
+  "jev-1.13": {
+    "id": "jev-1.13",
+    "name": "Jev 1.13",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.042,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "contextWindow": 64000,
+    "maxTokens": 0,
+    "deprecatedAt": "2026-09-21T00:00:26.768Z"
+  },
+  "jev-1.13-free": {
+    "id": "jev-1.13-free",
+    "name": "Jev 1.13 Free",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "contextWindow": 64000,
+    "maxTokens": 0,
+    "deprecatedAt": "2026-09-21T00:00:26.768Z"
+  },
+  "jev-latest": {
+    "id": "jev-latest",
+    "name": "Jev",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.042,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "contextWindow": 64000,
+    "maxTokens": 0,
+    "deprecatedAt": "2026-09-21T00:00:26.768Z"
   }
 }

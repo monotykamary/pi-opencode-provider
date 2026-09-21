@@ -15,7 +15,7 @@ _GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](http
 
 ## Features
 
-- **76+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **73+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -129,9 +129,6 @@ pi
 | Grok 4.6 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
 | Grok Build 0.1 | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
 | Grok Code | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
-| Jev | Completions | Text | 64K | 0 | $0.04 | — |
-| Jev 1.13 | Completions | Text | 64K | 0 | $0.04 | — |
-| Jev 1.13 Free | Completions | Text | 64K | 0 | — | — |
 | Kimi K2.5 | Completions | Text + Image | 262K | 66K | $0.60 | $3.00 |
 | Kimi K2.6 | Completions | Text + Image | 262K | 66K | $0.95 | $4.00 |
 | Kimi K2.7 Code | Completions | Text + Image | 262K | 262K | $0.95 | $4.00 |
