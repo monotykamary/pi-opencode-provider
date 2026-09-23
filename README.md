@@ -15,7 +15,7 @@ _GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](http
 
 ## Features
 
-- **74+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **77+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -83,6 +83,7 @@ pi
 | Claude Opus 4.7 | Anthropic | Text + Image | 1.0M | 128K | $5.00 | $25.00 |
 | Claude Opus 4.8 | Anthropic | Text + Image | 1.0M | 128K | $5.00 | $25.00 |
 | Claude Opus 5 | Anthropic | Text + Image | 1.0M | 128K | $5.00 | $25.00 |
+| Claude Opus 5.5 | Anthropic | Text + Image | 1.0M | 128K | $4.00 | $20.00 |
 | Claude Sonnet 4 | Anthropic | Text + Image | 200K | 64K | $3.00 | $15.00 |
 | Claude Sonnet 4.5 | Anthropic | Text + Image | 200K | 64K | $3.00 | $15.00 |
 | Claude Sonnet 4.6 | Anthropic | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
@@ -125,8 +126,11 @@ pi
 | GPT-5.6 Sol | Responses | Text + Image | 1.1M | 128K | $4.00 | $20.00 |
 | GPT-5.6 Terra | Responses | Text + Image | 1.1M | 128K | $2.50 | $15.00 |
 | GPT-6 Astra | Responses | Text + Image | 1.1M | 128K | $10.00 | $50.00 |
+| GPT-6 Luna | Responses | Text + Image | 1.1M | 128K | $0.10 | $0.50 |
+| GPT-6 Sol | Responses | Text + Image | 1.1M | 128K | $2.00 | $10.00 |
 | Grok 4.5 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
 | Grok 4.6 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
+| Grok 4.7 (30% Off) | Responses | Text + Image | 500K | 500K | $1.40 | $4.20 |
 | Grok Build 0.1 | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
 | Grok Code | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
 | Kimi K2.5 | Completions | Text + Image | 262K | 66K | $0.60 | $3.00 |
@@ -134,7 +138,6 @@ pi
 | Kimi K2.7 Code | Completions | Text + Image | 262K | 262K | $0.95 | $4.00 |
 | Kimi K3 | Completions | Text + Image | 1.0M | 131K | $3.00 | $15.00 |
 | Ling 3.0 Flash Fin Free | Completions | Text | 262K | 33K | — | — |
-| MiMo V2.5 Free | Completions | Text + Image | 200K | 32K | — | — |
 | MiMo-V2.6-Flash Free | Completions | Text + Image | 200K | 32K | — | — |
 | MiniMax-M2.5 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
 | MiniMax-M2.7 | Completions | Text | 205K | 131K | $0.30 | $1.20 |

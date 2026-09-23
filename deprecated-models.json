@@ -75,5 +75,25 @@
     "contextWindow": 64000,
     "maxTokens": 0,
     "deprecatedAt": "2026-09-21T00:00:26.768Z"
+  },
+  "mimo-v2.5-free": {
+    "id": "mimo-v2.5-free",
+    "name": "MiMo V2.5 Free",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "contextWindow": 200000,
+    "maxTokens": 32000,
+    "deprecatedAt": "2026-09-23T00:00:24.926Z"
   }
 }
