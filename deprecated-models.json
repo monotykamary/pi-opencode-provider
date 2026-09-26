@@ -95,5 +95,34 @@
     "contextWindow": 200000,
     "maxTokens": 32000,
     "deprecatedAt": "2026-09-23T00:00:24.926Z"
+  },
+  "muse-spark-1.2-contributor-free": {
+    "id": "muse-spark-1.2-contributor-free",
+    "name": "Muse Spark 1.2 Free",
+    "api": "openai-responses",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": "minimal",
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": "xhigh",
+      "max": null
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1048576,
+    "maxTokens": 131072,
+    "deprecatedAt": "2026-09-26T00:00:18.606Z"
   }
 }

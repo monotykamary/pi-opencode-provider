@@ -143,7 +143,6 @@ pi
 | MiniMax-M2.7 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
 | MiniMax-M3 | Completions | Text + Image | 512K | 128K | $0.30 | $1.20 |
 | Muse Spark 1.2 | Responses | Text + Image | 1.0M | 131K | $1.25 | $4.25 |
-| Muse Spark 1.2 Free | Responses | Text + Image | 1.0M | 131K | — | — |
 | Muse Spark 1.3 | Responses | Text + Image | 1.0M | 131K | $1.25 | $4.25 |
 | Muse Spark 1.3 Free | Responses | Text + Image | 1.0M | 131K | — | — |
 | Nemotron 3 Ultra Free | Completions | Text | 1.0M | 128K | — | — |
@@ -151,6 +150,7 @@ pi
 | Qwen3.5 Plus | Anthropic | Text + Image | 262K | 66K | $0.20 | $1.20 |
 | Qwen3.6 Plus | Anthropic | Text + Image | 262K | 66K | $0.50 | $3.00 |
 | Qwen3.8 Flash | Anthropic | Text + Image | 1.0M | 131K | $0.15 | $0.47 |
+| Qwen3.8 Max | Completions | Text + Image | 262K | 131K | $2.00 | $6.00 |
 | Space Bunny Free | Completions | Text + Image | 1.0M | 524K | — | — |
 *Costs are per million tokens. Prices subject to change - check [opencode.ai](https://opencode.ai) for current pricing.*
 
