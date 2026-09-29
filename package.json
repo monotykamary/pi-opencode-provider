@@ -1,14 +1,16 @@
 {
   "name": "@monotykamary/pi-opencode-provider",
-  "version": "1.0.34",
+  "version": "1.0.35",
   "description": "Opencode provider extension for pi - Access GPT, Claude, Gemini, GLM, MiniMax, Kimi and more through the opencode.ai API",
   "type": "module",
   "main": "index.ts",
   "scripts": {
     "clean": "echo 'nothing to clean'",
     "build": "echo 'nothing to build'",
-    "check": "echo 'nothing to check'",
-    "update-models": "node scripts/update-models.js"
+    "check": "tsc --noEmit && node scripts/test-pi-compat.mjs",
+    "update-models": "node scripts/update-models.js",
+    "test:pi": "node scripts/test-pi-compat.mjs",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [
     "pi",
@@ -32,6 +34,13 @@
     ]
   },
   "devDependencies": {
-    "@earendil-works/pi-coding-agent": "0.87.0"
+    "@earendil-works/pi-coding-agent": "0.99.0",
+    "typescript": "6.0.3",
+    "@types/node": "^25.9.1",
+    "@earendil-works/pi-ai": "0.99.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-ai": "*"
   }
 }

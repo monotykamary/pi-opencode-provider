@@ -22,7 +22,8 @@
  * Then use /model to select from available models
  */
 
-import { getAgentDir, type ExtensionAPI, type ModelRegistry } from "@earendil-works/pi-coding-agent";
+import { getAgentDir, type ExtensionAPI, type ModelRegistry, type ProviderConfig } from "@earendil-works/pi-coding-agent";
+import { getAllBuiltinModels } from "@earendil-works/pi-ai/providers/all";
 import modelsData from "./models.json" with { type: "json" };
 import customModelsData from "./custom-models.json" with { type: "json" };
 import patchData from "./patch.json" with { type: "json" };
@@ -326,6 +327,18 @@ async function resolveApiKey(modelRegistry: ModelRegistry): Promise<void> {
 
 // ─── Extension Entry Point ────────────────────────────────────────────────────
 
+// Legacy provider registrations replace all operations in Pi 0.99. Preserve
+// native image/classifier models and their implementations, rather than reviving
+// old cached Jev entries as zero-output chat models.
+function providerModels(models: JsonModel[]): NonNullable<ProviderConfig["models"]> {
+  const nonChat = getAllBuiltinModels("opencode").filter(model => model.type !== "chat");
+  const nonChatIds = new Set(nonChat.map(model => model.id));
+  return [
+    ...models.filter(model => !nonChatIds.has(model.id)).map(model => ({ ...model, api: model.api ?? "openai-completions" as const })),
+    ...nonChat,
+  ];
+}
+
 export default function (pi: ExtensionAPI) {
   const embeddedModels = modelsData as JsonModel[];
   const customModels = customModelsData as JsonModel[];
@@ -339,19 +352,7 @@ export default function (pi: ExtensionAPI) {
     baseUrl: BASE_URL,
     apiKey: "$OPENCODE_API_KEY",
     api: "openai-completions",
-    models: staleModels.map(m => ({
-      id: m.id,
-      name: m.name,
-      api: m.api || "openai-completions",
-      baseUrl: m.baseUrl,
-      reasoning: m.reasoning,
-      thinkingLevelMap: m.thinkingLevelMap,
-      input: m.input,
-      cost: m.cost,
-      contextWindow: m.contextWindow,
-      maxTokens: m.maxTokens,
-      compat: m.compat,
-    })),
+    models: providerModels(staleModels),
   });
 
   pi.on("session_start", async (_event, ctx) => {
@@ -366,19 +367,7 @@ export default function (pi: ExtensionAPI) {
             baseUrl: BASE_URL,
             apiKey: "$OPENCODE_API_KEY",
             api: "openai-completions",
-            models: buildModels(freshBase, customModels, patches).map(m => ({
-              id: m.id,
-              name: m.name,
-              api: m.api || "openai-completions",
-              baseUrl: m.baseUrl,
-              reasoning: m.reasoning,
-              thinkingLevelMap: m.thinkingLevelMap,
-              input: m.input,
-              cost: m.cost,
-              contextWindow: m.contextWindow,
-              maxTokens: m.maxTokens,
-              compat: m.compat,
-            })),
+            models: providerModels(buildModels(freshBase, customModels, patches)),
           });
         }
       });
