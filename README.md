@@ -15,7 +15,7 @@ _GPT, Claude, Gemini, GLM, MiniMax, Kimi, DeepSeek — unified API for [pi](http
 
 ## Features
 
-- **80+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **81+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -129,6 +129,7 @@ pi
 | GPT-6 Astra | Responses | Text + Image | 1.1M | 128K | $10.00 | $50.00 |
 | GPT-6 Luna | Responses | Text + Image | 1.1M | 128K | $0.10 | $0.50 |
 | GPT-6 Sol | Responses | Text + Image | 1.1M | 128K | $2.00 | $10.00 |
+| GPT-6.1 Sol | Responses | Text + Image | 1.1M | 128K | $2.00 | $10.00 |
 | Grok 4.5 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
 | Grok 4.6 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
 | Grok 4.7 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
