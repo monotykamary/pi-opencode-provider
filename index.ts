@@ -327,14 +327,16 @@ async function resolveApiKey(modelRegistry: ModelRegistry): Promise<void> {
 
 // ─── Extension Entry Point ────────────────────────────────────────────────────
 
-// Legacy provider registrations replace all operations in Pi 0.99. Preserve
+// Legacy provider registrations replace all operations in Pi 1.0. Preserve
 // native image/classifier models and their implementations, rather than reviving
 // old cached Jev entries as zero-output chat models.
-function providerModels(models: JsonModel[]): NonNullable<ProviderConfig["models"]> {
+export function providerModels(models: JsonModel[]): NonNullable<ProviderConfig["models"]> {
   const nonChat = getAllBuiltinModels("opencode").filter(model => model.type !== "chat");
   const nonChatIds = new Set(nonChat.map(model => model.id));
   return [
-    ...models.filter(model => !nonChatIds.has(model.id)).map(model => ({ ...model, api: model.api ?? "openai-completions" as const })),
+    // Old catalogs include retired Jev aliases with maxTokens:0. Even when
+    // absent from the native classifier catalog, they must never become chat models.
+    ...models.filter(model => !nonChatIds.has(model.id) && model.maxTokens > 0).map(model => ({ ...model, api: model.api ?? "openai-completions" as const })),
     ...nonChat,
   ];
 }
