@@ -20,7 +20,7 @@ Run `bun run test:pi` for offline manifest, catalog, lifecycle and streaming che
 
 ## Features
 
-- **82+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **83+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -146,6 +146,7 @@ pi
 | Kimi K2.7 Code | Completions | Text + Image | 262K | 262K | $0.95 | $4.00 |
 | Kimi K3 | Completions | Text + Image | 1.0M | 131K | $3.00 | $15.00 |
 | Ling 3.0 Flash Fin Free | Completions | Text | 262K | 33K | — | — |
+| Ling 3.1 Flash Free | Completions | Text | 262K | 33K | — | — |
 | LongCat 2.5 Preview Free | Completions | Text + Image | 1.0M | 131K | — | — |
 | MiMo-V2.6-Flash Free | Completions | Text + Image | 200K | 32K | — | — |
 | MiniMax-M2.5 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
