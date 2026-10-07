@@ -429,6 +429,34 @@
     "maxTokens": 128000
   },
   {
+    "id": "mistral-large-4",
+    "name": "Mistral Large 4",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": null,
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.68,
+      "output": 2.09,
+      "cacheRead": 0.07,
+      "cacheWrite": 0
+    },
+    "contextWindow": 524288,
+    "maxTokens": 262144
+  },
+  {
     "id": "qwen3.5-plus",
     "name": "Qwen3.5 Plus",
     "api": "anthropic-messages",
@@ -565,6 +593,34 @@
       "cacheWrite": 0
     },
     "contextWindow": 204800,
+    "maxTokens": 131072
+  },
+  {
+    "id": "exo-free",
+    "name": "Exo Free",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": null,
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1048576,
     "maxTokens": 131072
   },
   {
