@@ -27,5 +27,34 @@
     "contextWindow": 1048576,
     "maxTokens": 131072,
     "deprecatedAt": "2026-09-26T00:00:18.606Z"
+  },
+  "fledge-alpha-free": {
+    "id": "fledge-alpha-free",
+    "name": "Fledge Alpha Free",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1048576,
+    "maxTokens": 131072,
+    "deprecatedAt": "2026-10-09T00:00:21.312Z"
   }
 }

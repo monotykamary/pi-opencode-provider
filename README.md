@@ -100,7 +100,6 @@ pi
 | DeepSeek V4 Pro | Completions | Text | 1.0M | 384K | $1.74 | $3.84 |
 | DeepSeek V4.1 Flash | Completions | Text + Image | 1.0M | 384K | $0.30 | $1.20 |
 | Exo Free | Completions | Text + Image | 1.0M | 131K | — | — |
-| Fledge Alpha Free | Completions | Text + Image | 1.0M | 131K | — | — |
 | Gemini 3 Flash | Gemini | Text + Image | 1.0M | 66K | $0.50 | $3.00 |
 | Gemini 3 Pro | Gemini | Text + Image | 1.0M | 66K | $1.25 | $10.00 |
 | Gemini 3.1 Pro Preview | Gemini | Text + Image | 1.0M | 66K | $2.00 | $12.00 |
@@ -165,6 +164,7 @@ pi
 | Qwen3.8 Flash | Anthropic | Text + Image | 1.0M | 131K | $0.15 | $0.47 |
 | Qwen3.8 Max | Completions | Text + Image | 262K | 131K | $2.00 | $6.00 |
 | Space Bunny Free | Completions | Text + Image | 1.0M | 524K | — | — |
+| Step 5 Preview Free | Completions | Text + Image | 1.0M | 66K | — | — |
 *Costs are per million tokens. Prices subject to change - check [opencode.ai](https://opencode.ai) for current pricing.*
 
 ## Usage
