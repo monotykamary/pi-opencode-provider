@@ -25,6 +25,7 @@ Run `bun run test:pi` for offline manifest, catalog, lifecycle and streaming che
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
 - **Vision Support** for image-capable models
+- **Quiet live model sync** — Models refresh from the opencode API in the background, at most hourly and by one pi process at a time ([details](#model-sync))
 
 ## Installation
 
@@ -196,6 +197,21 @@ The opencode API key can be configured in multiple ways. Credentials are resolve
 | Variable | Required | Description |
 |----------|----------|-------------|
 | `OPENCODE_API_KEY` | No | Your opencode.ai API key (fallback if not in auth.json) |
+| `PI_PROVIDER_SYNC_TTL_MS` | No | Model sync freshness window in ms (default `3600000`; `0` = revalidate every session start) |
+
+## Model sync
+
+Startup never waits on the network. pi starts with the cached catalog (`~/.pi/agent/cache/opencode-models.json`,
+falling back to the bundled `models.json`) and revalidates against `/zen/v1/models` in the background — only when:
+
+- an opencode API key is configured (no key, no request),
+- the cache is older than 1 hour, missing, or was fetched with a different API key, and
+- no other pi process is already refreshing it (an `opencode-models.lock` file next to the cache).
+
+So `/new`, `/reload`, `pi -p` and fan-out child agents share one cache instead of each calling the API; a
+session that skips the fetch still picks up a cache another process refreshed. A failed refresh is retried after
+5 minutes at the earliest. `PI_PROVIDER_SYNC_TTL_MS` changes the window (`0` revalidates on every session start).
+Only a hash fingerprint of the key is stored (`opencode-models.sync.json`), never the key itself.
 
 ## Configuration
 
