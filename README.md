@@ -20,7 +20,7 @@ Run `bun run test:pi` for offline manifest, catalog, lifecycle and streaming che
 
 ## Features
 
-- **86+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **87+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -81,6 +81,7 @@ pi
 | Model | API | Type | Context | Max Tokens | Input Cost | Output Cost |
 |-------|-----|------|---------|------------|------------|-------------|
 | Big Pickle | Completions | Text | 200K | 32K | — | — |
+| Cat Jam Free | Completions | Text | 262K | 131K | — | — |
 | Claude Fable 5 | Anthropic | Text + Image | 1.0M | 128K | $10.00 | $50.00 |
 | Claude Fable 5.1 | Anthropic | Text + Image | 1.0M | 128K | $10.00 | $50.00 |
 | Claude Haiku 4.5 | Anthropic | Text + Image | 200K | 64K | $1.00 | $5.00 |
