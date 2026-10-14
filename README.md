@@ -20,7 +20,7 @@ Run `bun run test:pi` for offline manifest, catalog, lifecycle and streaming che
 
 ## Features
 
-- **87+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **88+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -110,6 +110,7 @@ pi
 | Gemini 3.6 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $7.50 |
 | Gemini 3.7 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $7.50 |
 | Gemini 3.8 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $7.50 |
+| Gemini 4 Argon | Gemini | Text + Image | 1.0M | 66K | $2.00 | $10.00 |
 | GLM-5 | Completions | Text | 205K | 131K | $1.00 | $3.20 |
 | GLM-5.1 | Completions | Text | 205K | 131K | $1.40 | $4.40 |
 | GLM-5.2 | Completions | Text | 1.0M | 131K | $1.40 | $4.40 |
