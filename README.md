@@ -20,7 +20,7 @@ Run `bun run test:pi` for offline manifest, catalog, lifecycle and streaming che
 
 ## Features
 
-- **85+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **86+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -81,7 +81,7 @@ pi
 | Model | API | Type | Context | Max Tokens | Input Cost | Output Cost |
 |-------|-----|------|---------|------------|------------|-------------|
 | Big Pickle | Completions | Text | 200K | 32K | — | — |
-| Cat Jam Free | Completions | Text | 262K | 131K | — | — |
+| Cat Jam Free | Completions | Text | 1.0M | 131K | — | — |
 | Claude Fable 5 | Anthropic | Text + Image | 1.0M | 128K | $10.00 | $50.00 |
 | Claude Fable 5.1 | Anthropic | Text + Image | 1.0M | 128K | $10.00 | $50.00 |
 | Claude Haiku 4.5 | Anthropic | Text + Image | 200K | 64K | $1.00 | $5.00 |
@@ -101,6 +101,7 @@ pi
 | DeepSeek V4 Flash Vision Exp | Completions | Text + Image | 1.0M | 384K | $0.14 | $0.28 |
 | DeepSeek V4 Pro | Completions | Text | 1.0M | 384K | $1.74 | $3.84 |
 | DeepSeek V4.1 Flash | Completions | Text + Image | 1.0M | 384K | $0.30 | $1.20 |
+| DeepSeek V4.1 Flash Free | Completions | Text + Image | 200K | 32K | — | — |
 | Gemini 3 Flash | Gemini | Text + Image | 1.0M | 66K | $0.50 | $3.00 |
 | Gemini 3 Pro | Gemini | Text + Image | 1.0M | 66K | $1.25 | $10.00 |
 | Gemini 3.1 Pro Preview | Gemini | Text + Image | 1.0M | 66K | $2.00 | $12.00 |
@@ -159,12 +160,12 @@ pi
 | Muse Spark 1.3 Free | Responses | Text + Image | 1.0M | 131K | — | — |
 | Nemotron 3 Ultra Free | Completions | Text | 1.0M | 128K | — | — |
 | Nemotron 3.5 Lightning Free | Completions | Text | 262K | 262K | — | — |
+| Nemotron 3.5 Super VL Free | Completions | Text + Image | 1.0M | 131K | — | — |
 | Qwen3.5 Plus | Anthropic | Text + Image | 262K | 66K | $0.20 | $1.20 |
 | Qwen3.6 Plus | Anthropic | Text + Image | 262K | 66K | $0.50 | $3.00 |
 | Qwen3.8 Flash | Anthropic | Text + Image | 1.0M | 131K | $0.15 | $0.47 |
 | Qwen3.8 Max | Completions | Text + Image | 262K | 131K | $2.00 | $6.00 |
 | Space Bunny Free | Completions | Text + Image | 1.0M | 524K | — | — |
-| Step 5 Preview Free | Completions | Text + Image | 1.0M | 66K | — | — |
 *Costs are per million tokens. Prices subject to change - check [opencode.ai](https://opencode.ai) for current pricing.*
 
 ## Usage
