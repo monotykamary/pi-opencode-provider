@@ -80,8 +80,8 @@ pi
 
 | Model | API | Type | Context | Max Tokens | Input Cost | Output Cost |
 |-------|-----|------|---------|------------|------------|-------------|
+| Beam Free | Completions | Text | 1.0M | 131K | — | — |
 | Big Pickle | Completions | Text | 200K | 32K | — | — |
-| Cat Jam Free | Completions | Text | 1.0M | 131K | — | — |
 | Claude Fable 5 | Anthropic | Text + Image | 1.0M | 128K | $10.00 | $50.00 |
 | Claude Fable 5.1 | Anthropic | Text + Image | 1.0M | 128K | $10.00 | $50.00 |
 | Claude Haiku 4.5 | Anthropic | Text + Image | 200K | 64K | $1.00 | $5.00 |
@@ -116,6 +116,7 @@ pi
 | GLM-5.2 | Completions | Text | 1.0M | 131K | $1.40 | $4.40 |
 | GLM-5.3 | Completions | Text | 1.0M | 131K | $1.40 | $4.40 |
 | GLM-5.3-Flash | Completions | Text + Image | 1.0M | 131K | $0.15 | $0.50 |
+| GLM-5.3-Flash Free | Completions | Text + Image | 200K | 32K | — | — |
 | GPT-5 | Responses | Text + Image | 400K | 128K | $1.07 | $8.50 |
 | GPT-5 Codex | Responses | Text + Image | 400K | 128K | $1.07 | $8.50 |
 | GPT-5 Nano | Responses | Text + Image | 400K | 128K | $0.05 | $0.40 |
@@ -157,7 +158,6 @@ pi
 | Mistral Large 4 | Completions | Text + Image | 524K | 262K | $0.68 | $2.09 |
 | Muse Spark 1.2 | Responses | Text + Image | 1.0M | 131K | $1.25 | $4.25 |
 | Muse Spark 1.3 | Responses | Text + Image | 1.0M | 131K | $1.25 | $4.25 |
-| Muse Spark 1.3 Free | Responses | Text + Image | 1.0M | 131K | — | — |
 | Nemotron 3 Ultra Free | Completions | Text | 1.0M | 128K | — | — |
 | Nemotron 3.5 Lightning Free | Completions | Text | 262K | 262K | — | — |
 | Nemotron 3.5 Super VL Free | Completions | Text + Image | 1.0M | 131K | — | — |
