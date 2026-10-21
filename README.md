@@ -20,7 +20,7 @@ Run `bun run test:pi` for offline manifest, catalog, lifecycle and streaming che
 
 ## Features
 
-- **86+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **87+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -159,6 +159,7 @@ pi
 | Mistral Large 4 | Completions | Text + Image | 524K | 262K | $0.68 | $2.09 |
 | Muse Spark 1.2 | Responses | Text + Image | 1.0M | 131K | $1.25 | $4.25 |
 | Muse Spark 1.3 | Responses | Text + Image | 1.0M | 131K | $1.25 | $4.25 |
+| Muse Wonder | Responses | Text + Image | 1.0M | 131K | $4.00 | $20.00 |
 | Nemotron 3 Ultra Free | Completions | Text | 1.0M | 128K | — | — |
 | Nemotron 3.5 Lightning Free | Completions | Text | 262K | 262K | — | — |
 | Nemotron 3.5 Super VL Free | Completions | Text + Image | 1.0M | 131K | — | — |
