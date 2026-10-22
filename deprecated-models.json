@@ -209,5 +209,54 @@
     "contextWindow": 1048576,
     "maxTokens": 524288,
     "deprecatedAt": "2026-10-20T04:35:43.849Z"
+  },
+  "claude-sonnet-4": {
+    "id": "claude-sonnet-4",
+    "name": "Claude Sonnet 4",
+    "api": "anthropic-messages",
+    "baseUrl": "https://opencode.ai/zen",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "cacheWrite": 3.75
+    },
+    "contextWindow": 1000000,
+    "maxTokens": 64000,
+    "deprecatedAt": "2026-10-22T04:26:46.412Z"
+  },
+  "deepseek-v4-flash-vision-exp": {
+    "id": "deepseek-v4-flash-vision-exp",
+    "name": "DeepSeek V4 Flash Vision Exp",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.14,
+      "output": 0.28,
+      "cacheRead": 0.028,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1000000,
+    "maxTokens": 384000,
+    "deprecatedAt": "2026-10-22T04:26:46.412Z"
   }
 }
