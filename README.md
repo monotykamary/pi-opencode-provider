@@ -20,7 +20,7 @@ Run `bun run test:pi` for offline manifest, catalog, lifecycle and streaming che
 
 ## Features
 
-- **84+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **83+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -96,7 +96,6 @@ pi
 | Claude Sonnet 4.6 | Anthropic | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
 | Claude Sonnet 5 | Anthropic | Text + Image | 1.0M | 128K | $2.00 | $10.00 |
 | Claude Sonnet 5.5 | Anthropic | Text + Image | 1.0M | 128K | $2.00 | $10.00 |
-| DeepSeek V4 Flash | Completions | Text | 1.0M | 384K | $0.14 | $0.28 |
 | DeepSeek V4 Pro | Completions | Text | 1.0M | 384K | $1.74 | $3.48 |
 | DeepSeek V4.1 Flash | Completions | Text + Image | 1.0M | 384K | $0.30 | $1.20 |
 | DeepSeek V4.1 Flash Free | Completions | Text + Image | 200K | 32K | — | — |

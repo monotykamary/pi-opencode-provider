@@ -278,5 +278,33 @@
     "contextWindow": 1000000,
     "maxTokens": 512000,
     "deprecatedAt": "2026-10-23T04:32:15.672Z"
+  },
+  "deepseek-v4-flash": {
+    "id": "deepseek-v4-flash",
+    "name": "DeepSeek V4 Flash",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.14,
+      "output": 0.28,
+      "cacheRead": 0.028,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1000000,
+    "maxTokens": 384000,
+    "deprecatedAt": "2026-10-27T04:48:12.145Z"
   }
 }
