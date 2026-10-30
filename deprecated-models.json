@@ -1,33 +1,4 @@
 {
-  "step-5-preview-free": {
-    "id": "step-5-preview-free",
-    "name": "Step 5 Preview Free",
-    "api": "openai-completions",
-    "baseUrl": "https://opencode.ai/zen/v1",
-    "reasoning": true,
-    "thinkingLevelMap": {
-      "off": null,
-      "minimal": null,
-      "low": "low",
-      "medium": "medium",
-      "high": "high",
-      "xhigh": null,
-      "max": null
-    },
-    "input": [
-      "text",
-      "image"
-    ],
-    "cost": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0
-    },
-    "contextWindow": 1000000,
-    "maxTokens": 65536,
-    "deprecatedAt": "2026-10-16T04:18:05.848Z"
-  },
   "cat-jam-free": {
     "id": "cat-jam-free",
     "name": "Cat Jam Free",
