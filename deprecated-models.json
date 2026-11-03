@@ -1,33 +1,4 @@
 {
-  "space-bunny-free": {
-    "id": "space-bunny-free",
-    "name": "Space Bunny Free",
-    "api": "openai-completions",
-    "baseUrl": "https://opencode.ai/zen/v1",
-    "reasoning": true,
-    "thinkingLevelMap": {
-      "off": null,
-      "minimal": null,
-      "low": "low",
-      "medium": "medium",
-      "high": "high",
-      "xhigh": "xhigh",
-      "max": "max"
-    },
-    "input": [
-      "text",
-      "image"
-    ],
-    "cost": {
-      "input": 0,
-      "output": 0,
-      "cacheRead": 0,
-      "cacheWrite": 0
-    },
-    "contextWindow": 1048576,
-    "maxTokens": 524288,
-    "deprecatedAt": "2026-10-20T04:35:43.849Z"
-  },
   "claude-sonnet-4": {
     "id": "claude-sonnet-4",
     "name": "Claude Sonnet 4",
