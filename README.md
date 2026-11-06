@@ -96,7 +96,7 @@ pi
 | Claude Sonnet 4.6 | Anthropic | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
 | Claude Sonnet 5 | Anthropic | Text + Image | 1.0M | 128K | $2.00 | $10.00 |
 | Claude Sonnet 5.5 | Anthropic | Text + Image | 1.0M | 128K | $2.00 | $10.00 |
-| Crouton Alpha Free | Completions | Text + Image | 1.0M | 270K | — | — |
+| Crouton Alpha Free | Responses | Text + Image | 1.0M | 270K | — | — |
 | DeepSeek V4 Pro | Completions | Text | 1.0M | 384K | $1.74 | $3.48 |
 | DeepSeek V4.1 Flash | Completions | Text + Image | 1.0M | 384K | $0.30 | $1.20 |
 | DeepSeek V4.1 Flash Free | Completions | Text + Image | 200K | 32K | — | — |
