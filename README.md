@@ -20,7 +20,7 @@ Run `bun run test:pi` for offline manifest, catalog, lifecycle and streaming che
 
 ## Features
 
-- **85+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **88+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -84,6 +84,7 @@ pi
 | Big Pickle | Completions | Text | 200K | 32K | — | — |
 | Claude Fable 5 | Anthropic | Text + Image | 1.0M | 128K | $10.00 | $50.00 |
 | Claude Fable 5.1 | Anthropic | Text + Image | 1.0M | 128K | $10.00 | $50.00 |
+| Claude Fable 5.2 | Anthropic | Text + Image | 1.0M | 128K | $8.00 | $40.00 |
 | Claude Haiku 4.5 | Anthropic | Text + Image | 200K | 64K | $1.00 | $5.00 |
 | Claude Haiku 5.5 | Anthropic | Text + Image | 1.0M | 128K | $0.10 | $0.50 |
 | Claude Opus 4.5 | Anthropic | Text + Image | 200K | 64K | $5.00 | $25.00 |
@@ -96,7 +97,6 @@ pi
 | Claude Sonnet 4.6 | Anthropic | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
 | Claude Sonnet 5 | Anthropic | Text + Image | 1.0M | 128K | $2.00 | $10.00 |
 | Claude Sonnet 5.5 | Anthropic | Text + Image | 1.0M | 128K | $2.00 | $10.00 |
-| Crouton Alpha Free | Responses | Text + Image | 1.0M | 270K | — | — |
 | DeepSeek V4 Pro | Completions | Text | 1.0M | 384K | $1.74 | $3.48 |
 | DeepSeek V4.1 Flash | Completions | Text + Image | 1.0M | 384K | $0.30 | $1.20 |
 | DeepSeek V4.1 Flash Free | Completions | Text + Image | 200K | 32K | — | — |
@@ -106,9 +106,9 @@ pi
 | Gemini 3.1 Pro Preview | Gemini | Text + Image | 1.0M | 66K | $2.00 | $12.00 |
 | Gemini 3.5 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $9.00 |
 | Gemini 3.5 Flash Lite | Gemini | Text + Image | 1.0M | 66K | $0.30 | $2.50 |
-| Gemini 3.6 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $7.50 |
-| Gemini 3.7 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $7.50 |
-| Gemini 3.8 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $7.50 |
+| Gemini 3.6 Flash | Gemini | Text + Image | 1.0M | 66K | $0.75 | $3.75 |
+| Gemini 3.7 Flash | Gemini | Text + Image | 1.0M | 66K | $0.75 | $3.75 |
+| Gemini 3.8 Flash | Gemini | Text + Image | 1.0M | 66K | $0.75 | $3.75 |
 | Gemini 4 Argon | Gemini | Text + Image | 1.0M | 66K | $2.00 | $10.00 |
 | GLM-5 | Completions | Text | 205K | 131K | $1.00 | $3.20 |
 | GLM-5.1 | Completions | Text | 205K | 131K | $1.40 | $4.40 |
@@ -151,11 +151,14 @@ pi
 | Kimi K2.6 | Completions | Text + Image | 262K | 66K | $0.95 | $4.00 |
 | Kimi K2.7 Code | Completions | Text + Image | 262K | 262K | $0.95 | $4.00 |
 | Kimi K3 | Completions | Text + Image | 1.0M | 131K | $3.00 | $15.00 |
+| LongCat 2.5 Free | Completions | Text + Image | 1.0M | 262K | — | — |
 | MiMo-V2.6-Flash Free | Completions | Text + Image | 200K | 32K | — | — |
+| MiniMax M3.1 Flash Free | Completions | Text + Image | 1.0M | 512K | — | — |
 | MiniMax-M2.5 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
 | MiniMax-M2.7 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
 | MiniMax-M3 | Completions | Text + Image | 512K | 128K | $0.30 | $1.20 |
 | Mistral Large 4 | Completions | Text + Image | 524K | 262K | $0.68 | $2.09 |
+| Muse Ember 1.0 | Responses | Text + Image | 1.0M | 270K | $0.10 | $0.50 |
 | Muse Spark 1.2 | Responses | Text + Image | 1.0M | 131K | $1.25 | $4.25 |
 | Muse Spark 1.3 | Responses | Text + Image | 1.0M | 131K | $1.25 | $4.25 |
 | Muse Wonder | Responses | Text + Image | 1.0M | 131K | $4.00 | $20.00 |
