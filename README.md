@@ -147,6 +147,7 @@ pi
 | Grok 4.7 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
 | Grok Build 0.1 | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
 | Grok Code | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
+| Hy4 flash Free | Completions | Text + Image | 1.0M | 66K | — | — |
 | Iceman Free | Completions | Text | 262K | 131K | — | — |
 | Inkling 2 Small Free | Completions | Text + Image | 1.0M | 131K | — | — |
 | Kimi K2.5 | Completions | Text + Image | 262K | 66K | $0.60 | $3.00 |
@@ -155,7 +156,6 @@ pi
 | Kimi K3 | Completions | Text + Image | 1.0M | 1.0M | $3.00 | $15.00 |
 | LongCat 2.5 Free | Completions | Text + Image | 1.0M | 262K | — | — |
 | MiMo-V2.6-Flash Free | Completions | Text + Image | 200K | 32K | — | — |
-| MiniMax M3.1 Flash Free | Completions | Text + Image | 1.0M | 512K | — | — |
 | MiniMax-M2.5 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
 | MiniMax-M2.7 | Completions | Text | 205K | 131K | $0.30 | $1.20 |
 | MiniMax-M3 | Completions | Text + Image | 512K | 128K | $0.30 | $1.20 |
