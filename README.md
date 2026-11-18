@@ -20,7 +20,7 @@ Run `bun run test:pi` for offline manifest, catalog, lifecycle and streaming che
 
 ## Features
 
-- **90+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **91+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -117,7 +117,6 @@ pi
 | GLM-5.2 | Completions | Text | 1.0M | 131K | $1.40 | $4.40 |
 | GLM-5.3 | Completions | Text | 1.0M | 131K | $1.40 | $4.40 |
 | GLM-5.3-Flash | Completions | Text + Image | 1.0M | 131K | $0.15 | $0.50 |
-| GLM-5.3-Flash Free | Completions | Text + Image | 200K | 32K | — | — |
 | GPT-5 | Responses | Text + Image | 400K | 128K | $1.07 | $8.50 |
 | GPT-5 Codex | Responses | Text + Image | 400K | 128K | $1.07 | $8.50 |
 | GPT-5 Nano | Responses | Text + Image | 400K | 128K | $0.05 | $0.40 |
@@ -142,6 +141,8 @@ pi
 | GPT-6 Luna | Responses | Text + Image | 1.1M | 128K | $0.10 | $0.50 |
 | GPT-6 Sol | Responses | Text + Image | 1.1M | 128K | $2.00 | $10.00 |
 | GPT-6.1 Sol | Responses | Text + Image | 1.1M | 128K | $2.00 | $10.00 |
+| GPT-6.2 Astra | Responses | Text + Image | 1.1M | 128K | $8.00 | $40.00 |
+| GPT-6.2 Sol | Responses | Text + Image | 1.1M | 128K | $2.00 | $10.00 |
 | Grok 4.5 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
 | Grok 4.6 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |
 | Grok 4.7 | Responses | Text + Image | 500K | 500K | $2.00 | $6.00 |

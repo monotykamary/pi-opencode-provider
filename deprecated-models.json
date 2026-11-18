@@ -85,5 +85,34 @@
     "contextWindow": 1000000,
     "maxTokens": 512000,
     "deprecatedAt": "2026-11-17T07:42:57.146Z"
+  },
+  "glm-5.3-flash-free": {
+    "id": "glm-5.3-flash-free",
+    "name": "GLM-5.3-Flash Free",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "contextWindow": 200000,
+    "maxTokens": 32000,
+    "deprecatedAt": "2026-11-18T07:06:30.319Z"
   }
 }
