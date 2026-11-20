@@ -20,7 +20,7 @@ Run `bun run test:pi` for offline manifest, catalog, lifecycle and streaming che
 
 ## Features
 
-- **93+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **87+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -101,9 +101,7 @@ pi
 | DeepSeek V4.1 Flash 1017 | Completions | Text + Image | 1.0M | 384K | $0.30 | $1.20 |
 | DeepSeek V4.1 Flash Free | Completions | Text + Image | 200K | 32K | — | — |
 | Flint 40B Free | Completions | Text | 262K | 66K | — | — |
-| Gemini 3 Flash | Gemini | Text + Image | 1.0M | 66K | $0.50 | $3.00 |
 | Gemini 3 Pro | Gemini | Text + Image | 1.0M | 66K | $1.25 | $10.00 |
-| Gemini 3.1 Pro Preview | Gemini | Text + Image | 1.0M | 66K | $2.00 | $12.00 |
 | Gemini 3.5 Flash | Gemini | Text + Image | 1.0M | 66K | $1.50 | $9.00 |
 | Gemini 3.5 Flash Lite | Gemini | Text + Image | 1.0M | 66K | $0.30 | $2.50 |
 | Gemini 3.6 Flash | Gemini | Text + Image | 1.0M | 66K | $0.75 | $3.75 |
@@ -113,9 +111,6 @@ pi
 | Gemini 4 Carbon | Gemini | Text + Image | 1.0M | 66K | $2.00 | $10.00 |
 | Gemini 4 Hydrogen | Gemini | Text + Image | 1.0M | 66K | $1.50 | $7.50 |
 | Gemini 4 Neon | Gemini | Text + Image | 1.0M | 66K | $3.00 | $15.00 |
-| GLM-5 | Completions | Text | 205K | 131K | $1.00 | $3.20 |
-| GLM-5.1 | Completions | Text | 205K | 131K | $1.40 | $4.40 |
-| GLM-5.2 | Completions | Text | 1.0M | 131K | $1.40 | $4.40 |
 | GLM-5.3 | Completions | Text | 1.0M | 131K | $1.40 | $4.40 |
 | GLM-5.3-Flash | Completions | Text + Image | 1.0M | 131K | $0.15 | $0.50 |
 | GPT-5 | Responses | Text + Image | 400K | 128K | $1.07 | $8.50 |
@@ -151,7 +146,6 @@ pi
 | Grok Code | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
 | Hy4 flash Free | Completions | Text + Image | 1.0M | 66K | — | — |
 | Iceman Free | Completions | Text | 262K | 131K | — | — |
-| Inkling 2 Small Free | Completions | Text + Image | 1.0M | 131K | — | — |
 | Kimi K2.5 | Completions | Text + Image | 262K | 66K | $0.60 | $3.00 |
 | Kimi K2.6 | Completions | Text + Image | 262K | 66K | $0.95 | $4.00 |
 | Kimi K2.7 Code | Completions | Text + Image | 262K | 262K | $0.95 | $4.00 |

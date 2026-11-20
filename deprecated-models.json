@@ -114,5 +114,158 @@
     "contextWindow": 200000,
     "maxTokens": 32000,
     "deprecatedAt": "2026-11-18T07:06:30.319Z"
+  },
+  "glm-5": {
+    "id": "glm-5",
+    "name": "GLM-5",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 1,
+      "output": 3.2,
+      "cacheRead": 0.2,
+      "cacheWrite": 0
+    },
+    "contextWindow": 204800,
+    "maxTokens": 131072,
+    "deprecatedAt": "2026-11-20T06:57:41.893Z"
+  },
+  "gemini-3-flash": {
+    "id": "gemini-3-flash",
+    "name": "Gemini 3 Flash",
+    "api": "google-generative-ai",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": "minimal",
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.5,
+      "output": 3,
+      "cacheRead": 0.05,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1048576,
+    "maxTokens": 65536,
+    "deprecatedAt": "2026-11-20T06:57:41.893Z"
+  },
+  "glm-5.1": {
+    "id": "glm-5.1",
+    "name": "GLM-5.1",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.26,
+      "cacheWrite": 0
+    },
+    "contextWindow": 204800,
+    "maxTokens": 131072,
+    "deprecatedAt": "2026-11-20T06:57:41.893Z"
+  },
+  "gemini-3.1-pro": {
+    "id": "gemini-3.1-pro",
+    "name": "Gemini 3.1 Pro Preview",
+    "api": "google-generative-ai",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": null
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 12,
+      "cacheRead": 0.2,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1048576,
+    "maxTokens": 65536,
+    "deprecatedAt": "2026-11-20T06:57:41.893Z"
+  },
+  "glm-5.2": {
+    "id": "glm-5.2",
+    "name": "GLM-5.2",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": null,
+      "low": null,
+      "medium": null,
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.26,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1000000,
+    "maxTokens": 131072,
+    "deprecatedAt": "2026-11-20T06:57:41.893Z"
+  },
+  "inkling-2-small-free": {
+    "id": "inkling-2-small-free",
+    "name": "Inkling 2 Small Free",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "thinkingLevelMap": {
+      "off": null,
+      "minimal": "minimal",
+      "low": "low",
+      "medium": "medium",
+      "high": "high",
+      "xhigh": null,
+      "max": "max"
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1048576,
+    "maxTokens": 131072,
+    "deprecatedAt": "2026-11-20T06:57:41.893Z"
   }
 }
