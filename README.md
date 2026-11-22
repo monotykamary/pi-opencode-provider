@@ -98,7 +98,7 @@ pi
 | Claude Sonnet 5 | Anthropic | Text + Image | 1.0M | 128K | $2.00 | $10.00 |
 | Claude Sonnet 5.5 | Anthropic | Text + Image | 1.0M | 128K | $2.00 | $10.00 |
 | DeepSeek V4 Pro | Completions | Text | 1.0M | 384K | $1.74 | $3.48 |
-| DeepSeek V4.1 Flash 1017 | Completions | Text + Image | 1.0M | 384K | $0.30 | $1.20 |
+| DeepSeek V4.1 Flash 1017 | Completions | Text + Image | 1.0M | 384K | $0.12 | $0.48 |
 | DeepSeek V4.1 Flash Free | Completions | Text + Image | 200K | 32K | — | — |
 | Flint 40B Free | Completions | Text | 262K | 66K | — | — |
 | Gemini 3 Pro | Gemini | Text + Image | 1.0M | 66K | $1.25 | $10.00 |
@@ -111,7 +111,7 @@ pi
 | Gemini 4 Carbon | Gemini | Text + Image | 1.0M | 66K | $2.00 | $10.00 |
 | Gemini 4 Hydrogen | Gemini | Text + Image | 1.0M | 66K | $1.50 | $7.50 |
 | Gemini 4 Neon | Gemini | Text + Image | 1.0M | 66K | $3.00 | $15.00 |
-| GLM-5.3 | Completions | Text | 1.0M | 131K | $1.40 | $4.40 |
+| GLM-5.3 | Completions | Text | 1.0M | 131K | $0.56 | $1.76 |
 | GLM-5.3-Flash | Completions | Text + Image | 1.0M | 131K | $0.15 | $0.50 |
 | GPT-5 | Responses | Text + Image | 400K | 128K | $1.07 | $8.50 |
 | GPT-5 Codex | Responses | Text + Image | 400K | 128K | $1.07 | $8.50 |
