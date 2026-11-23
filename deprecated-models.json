@@ -238,5 +238,25 @@
     "contextWindow": 1048576,
     "maxTokens": 131072,
     "deprecatedAt": "2026-11-20T06:57:41.893Z"
+  },
+  "longcat-2.5-free": {
+    "id": "longcat-2.5-free",
+    "name": "LongCat 2.5 Free",
+    "api": "openai-completions",
+    "baseUrl": "https://opencode.ai/zen/v1",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cacheRead": 0,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1000000,
+    "maxTokens": 262144,
+    "deprecatedAt": "2026-11-23T07:18:36.030Z"
   }
 }
