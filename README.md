@@ -20,7 +20,7 @@ Run `bun run test:pi` for offline manifest, catalog, lifecycle and streaming che
 
 ## Features
 
-- **87+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **85+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -94,7 +94,7 @@ pi
 | Claude Opus 5 | Anthropic | Text + Image | 1.0M | 128K | $5.00 | $25.00 |
 | Claude Opus 5.5 | Anthropic | Text + Image | 1.0M | 128K | $4.00 | $20.00 |
 | Claude Sonnet 4.5 | Anthropic | Text + Image | 200K | 64K | $3.00 | $15.00 |
-| Claude Sonnet 4.6 | Anthropic | Text + Image | 1.0M | 64K | $3.00 | $15.00 |
+| Claude Sonnet 4.6 | Anthropic | Text + Image | 1.0M | 128K | $3.00 | $15.00 |
 | Claude Sonnet 5 | Anthropic | Text + Image | 1.0M | 128K | $2.00 | $10.00 |
 | Claude Sonnet 5.5 | Anthropic | Text + Image | 1.0M | 128K | $2.00 | $10.00 |
 | DeepSeek V4 Pro | Completions | Text | 1.0M | 384K | $1.74 | $3.48 |
@@ -146,8 +146,6 @@ pi
 | Grok Code | Completions | Text + Image | 256K | 256K | $1.00 | $2.00 |
 | Hy4 flash Free | Completions | Text + Image | 1.0M | 66K | — | — |
 | Iceman Free | Completions | Text | 262K | 131K | — | — |
-| Kimi K2.5 | Completions | Text + Image | 262K | 66K | $0.60 | $3.00 |
-| Kimi K2.6 | Completions | Text + Image | 262K | 66K | $0.95 | $4.00 |
 | Kimi K2.7 Code | Completions | Text + Image | 262K | 262K | $0.95 | $4.00 |
 | Kimi K3 | Completions | Text + Image | 1.0M | 1.0M | $3.00 | $15.00 |
 | Kimi K3.1 Pro | Completions | Text + Image | 1.0M | 1.0M | $2.00 | $10.00 |
