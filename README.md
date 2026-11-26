@@ -20,7 +20,7 @@ Run `bun run test:pi` for offline manifest, catalog, lifecycle and streaming che
 
 ## Features
 
-- **85+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
+- **86+ AI Models** including GPT-5.x Codex, Claude Opus/Sonnet/Haiku, Gemini 3.x, GLM, MiniMax, Kimi K2.5, and more
 - **Multi-API Support** — uses the correct API protocol per model (Anthropic, OpenAI Responses, OpenAI Completions, Gemini)
 - **Cost Tracking** with per-model pricing for budget management
 - **Reasoning Models** with thinking level maps for proper effort control
@@ -164,6 +164,7 @@ pi
 | Qwen3.6 Plus | Anthropic | Text + Image | 262K | 66K | $0.50 | $3.00 |
 | Qwen3.8 Flash | Anthropic | Text + Image | 1.0M | 131K | $0.15 | $0.47 |
 | Qwen3.8 Max | Completions | Text + Image | 262K | 131K | $2.00 | $6.00 |
+| Seaglass Alpha Free | Completions | Text | 1.0M | 131K | — | — |
 | Tidepool Alpha Free | Completions | Text | 1.0M | 131K | — | — |
 *Costs are per million tokens. Prices subject to change - check [opencode.ai](https://opencode.ai) for current pricing.*
 
